@@ -1,0 +1,173 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-5574869347183618664
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f095ab04ffe3b514c808035bb335fa56, type: 3}
+  m_Name: EditorWindowCriterion
+  m_EditorClassIdentifier: 
+  m_EditorWindowType:
+    m_TypeName: UnityEditor.ProjectSettingsWindow, UnityEditor.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  m_CloseIfAlreadyOpen: 0
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff771ccdf4150419d9ff4d342b069aae, type: 3}
+  m_Name: f4-LayerMatrix
+  m_EditorClassIdentifier: 
+  m_Paragraphs:
+    m_Items:
+    - m_Type: 6
+      Title:
+        m_Untranslated: 
+      Text:
+        m_Untranslated: 
+      m_PollItems: []
+      m_PollCorrectItemIndexes: 00000000
+      m_Tutorial: {fileID: 0}
+      m_Image: {fileID: 0}
+      m_Video: {fileID: 0}
+      m_CriteriaCompletion: 0
+      m_Criteria:
+        m_Items: []
+      m_PossibleErrors: []
+      m_MaskingSettings:
+        m_MaskingEnabled: 0
+        m_UnmaskedViews: []
+      m_Summary: 
+      m_Description: 
+      m_InstructionBoxTitle: 
+      m_InstructionText: 
+      m_TutorialButtonText: 
+      codeBlockText: 
+    - m_Type: 0
+      Title:
+        m_Untranslated: Defining Layer Collisions using the Collision Matrix
+      Text:
+        m_Untranslated: 'Next we have to tell the Physics system to not look for
+          collisions between those two layers. '
+      m_PollItems: []
+      m_PollCorrectItemIndexes: 00000000
+      m_Tutorial: {fileID: 0}
+      m_Image: {fileID: 0}
+      m_Video: {fileID: 0}
+      m_CriteriaCompletion: 0
+      m_Criteria:
+        m_Items: []
+      m_PossibleErrors: []
+      m_MaskingSettings:
+        m_MaskingEnabled: 0
+        m_UnmaskedViews: []
+      m_Summary: 
+      m_Description: 
+      m_InstructionBoxTitle: 
+      m_InstructionText: 
+      m_TutorialButtonText: 
+      codeBlockText: 
+    - m_Type: 1
+      Title:
+        m_Untranslated: Open Up Edit -> Project Settings
+      Text:
+        m_Untranslated: 
+      m_PollItems: []
+      m_PollCorrectItemIndexes: 00000000
+      m_Tutorial: {fileID: 0}
+      m_Image: {fileID: 0}
+      m_Video: {fileID: 0}
+      m_CriteriaCompletion: 0
+      m_Criteria:
+        m_Items:
+        - Type:
+            m_TypeName: Unity.Tutorials.Core.Editor.EditorWindowCriterion, Unity.Tutorials.Core.Editor,
+              Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+          Criterion: {fileID: -5574869347183618664}
+      m_PossibleErrors: []
+      m_MaskingSettings:
+        m_MaskingEnabled: 0
+        m_UnmaskedViews: []
+      m_Summary: 
+      m_Description: 
+      m_InstructionBoxTitle: 
+      m_InstructionText: 
+      m_TutorialButtonText: 
+      codeBlockText: 
+    - m_Type: 0
+      Title:
+        m_Untranslated: 
+      Text:
+        m_Untranslated: "The window that appears is the project settings window.
+          There are a bunch different things to learn in this window, but for now,
+          we\u2019re going to ignore these and modify the Physics of the whole game.\r\nOn
+          the left-hand side, click on <b>\u201CPhysics 2D\u201D</b> (<i>NOT just
+          normal \"Physics\"</i>), to open up the Physics 2D tab. In this window,
+		  in the default tab (named \"General Settings\"),
+          you can change things like the gravity of the world, or the quality of
+          collisions. At the top of the settings page switch to the \"Layer Collision
+          Matrix\" tab. This defines all of the interactions between the Layers."
+      m_PollItems: []
+      m_PollCorrectItemIndexes: 00000000
+      m_Tutorial: {fileID: 0}
+      m_Image: {fileID: 0}
+      m_Video: {fileID: 0}
+      m_CriteriaCompletion: 0
+      m_Criteria:
+        m_Items: []
+      m_PossibleErrors: []
+      m_MaskingSettings:
+        m_MaskingEnabled: 0
+        m_UnmaskedViews: []
+      m_Summary: 
+      m_Description: 
+      m_InstructionBoxTitle: 
+      m_InstructionText: 
+      m_TutorialButtonText: 
+      codeBlockText: 
+  m_CameraSettings:
+    m_CameraMode: 0
+    m_FocusMode: 0
+    m_Orthographic: 0
+    m_Size: 0
+    m_Pivot: {x: 0, y: 0, z: 0}
+    m_Rotation: {x: 0, y: 0, z: 0, w: 0}
+    m_FrameObject:
+      m_SceneGuid: 
+      m_GameObjectGuid: 
+      m_SerializedComponentType:
+        m_TypeName: 
+      m_ComponentIndex: 0
+      m_AssetObject: {fileID: 0}
+      m_Prefab: {fileID: 0}
+    m_Enabled: 0
+  NextButton:
+    m_Untranslated: Next
+  DoneButton:
+    m_Untranslated: Done
+  m_NextButton: Next
+  m_DoneButton: Done
+  m_CompletedSound: {fileID: 0}
+  m_autoAdvance: 0
+  m_OnBeforePageShown:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnAfterPageShown:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnBeforeTutorialQuit:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnTutorialPageStay:
+    m_PersistentCalls:
+      m_Calls: []

@@ -1,0 +1,115 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff771ccdf4150419d9ff4d342b069aae, type: 3}
+  m_Name: b4-PublicVars
+  m_EditorClassIdentifier: 
+  m_Paragraphs:
+    m_Items:
+    - m_Type: 6
+      Title:
+        m_Untranslated: 
+      Text:
+        m_Untranslated: 
+      m_PollItems: []
+      m_PollCorrectItemIndexes: 00000000
+      m_Tutorial: {fileID: 0}
+      m_Image: {fileID: 0}
+      m_Video: {fileID: 0}
+      m_CriteriaCompletion: 0
+      m_Criteria:
+        m_Items: []
+      m_PossibleErrors: []
+      m_MaskingSettings:
+        m_MaskingEnabled: 0
+        m_UnmaskedViews: []
+      m_Summary: 
+      m_Description: 
+      m_InstructionBoxTitle: 
+      m_InstructionText: 
+      m_TutorialButtonText: 
+      codeBlockText: 
+    - m_Type: 0
+      Title:
+        m_Untranslated: Lines 8 and 11 - Public Variables
+      Text:
+        m_Untranslated: "<code>\r\n// How fast to rotate the player\r\npublic float
+          rotationSpeed = 5f;\r\n \r\nHow fast to move\r\npublic float thrustSpeed
+          = 5f;\r\n</code>\r\nAll (well almost all) variables that you declare as
+          public in a class will show up in the Inspector window as properties. The
+          syntax for public variable is:\r\n<code>public VariableType variableName
+          = defaultValue;\r\n</code>\r\nThe public keyword ensures that your variable
+          will show up in the Unity inspector (provided the type is one the editor
+          supports). The <c>VariableType</c> may range from primitive types such
+          as <c>int</c>s (integer values), <c>float</c>s (decimal values), or <c>string</c>s,
+          to more complex types such as <c>Sprite</c>s, or <c>GameObject</c>s (either
+          in the scene, or prefabs, we will see this later). The <c>variableName</c>
+          can be whatever you like, and the Unity editor will show this as a label
+          in the inspector. The <c>defaultValue</c> is optional, and tells Unity
+          what value to use when the script is first assigned to an object.\r\nIn
+          this Script, on <b>Lines 8 and 11</b>, there are two public variables:
+          rotateSpeed and thrustSpeed. When we added this Script to the player (in
+          the previous practical) these variables were set to their default values
+          (5 and 5)."
+      m_PollItems: []
+      m_PollCorrectItemIndexes: 00000000
+      m_Tutorial: {fileID: 0}
+      m_Image: {fileID: 0}
+      m_Video: {fileID: 0}
+      m_CriteriaCompletion: 0
+      m_Criteria:
+        m_Items: []
+      m_PossibleErrors: []
+      m_MaskingSettings:
+        m_MaskingEnabled: 0
+        m_UnmaskedViews: []
+      m_Summary: 
+      m_Description: 
+      m_InstructionBoxTitle: 
+      m_InstructionText: 
+      m_TutorialButtonText: 
+      codeBlockText: 
+  m_CameraSettings:
+    m_CameraMode: 0
+    m_FocusMode: 0
+    m_Orthographic: 0
+    m_Size: 0
+    m_Pivot: {x: 0, y: 0, z: 0}
+    m_Rotation: {x: 0, y: 0, z: 0, w: 0}
+    m_FrameObject:
+      m_SceneGuid: 
+      m_GameObjectGuid: 
+      m_SerializedComponentType:
+        m_TypeName: 
+      m_ComponentIndex: 0
+      m_AssetObject: {fileID: 0}
+      m_Prefab: {fileID: 0}
+    m_Enabled: 0
+  NextButton:
+    m_Untranslated: Next
+  DoneButton:
+    m_Untranslated: Done
+  m_NextButton: Next
+  m_DoneButton: Done
+  m_CompletedSound: {fileID: 0}
+  m_autoAdvance: 0
+  m_OnBeforePageShown:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnAfterPageShown:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnBeforeTutorialQuit:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnTutorialPageStay:
+    m_PersistentCalls:
+      m_Calls: []

@@ -1,0 +1,200 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff771ccdf4150419d9ff4d342b069aae, type: 3}
+  m_Name: b2-SpriteEditor
+  m_EditorClassIdentifier: 
+  m_Paragraphs:
+    m_Items:
+    - m_Type: 0
+      Title:
+        m_Untranslated: The Sprite Editor
+      Text:
+        m_Untranslated: "At the moment, the <asset>ExplosionSpritesheet</asset> Sprite
+          is just a normal single image Sprite as far as Unity is concerned \u2013
+          it needs to be explicitly told to treat such an image as a Spritesheet. "
+      m_PollItems: []
+      m_PollCorrectItemIndexes: 00000000
+      m_Tutorial: {fileID: 0}
+      m_Image: {fileID: 0}
+      m_Video: {fileID: 0}
+      m_CriteriaCompletion: 0
+      m_Criteria:
+        m_Items: []
+      m_PossibleErrors: []
+      m_MaskingSettings:
+        m_MaskingEnabled: 0
+        m_UnmaskedViews: []
+      m_Summary: 
+      m_Description: 
+      m_InstructionBoxTitle: 
+      m_InstructionText: 
+      m_TutorialButtonText: 
+      codeBlockText: 
+    - m_Type: 1
+      Title:
+        m_Untranslated: Open The Sprite Editor for the ExplosionSpritesheet
+      Text:
+        m_Untranslated: "To do this, first select the <asset>ExplosionSpritesheet</asset>
+          and then click on the \u201CSprite Editor\u201D button in the Inspector
+          window."
+      m_PollItems: []
+      m_PollCorrectItemIndexes: 00000000
+      m_Tutorial: {fileID: 0}
+      m_Image: {fileID: 0}
+      m_Video: {fileID: 0}
+      m_CriteriaCompletion: 0
+      m_Criteria:
+        m_Items:
+        - Type:
+            m_TypeName: Unity.Tutorials.Core.Editor.EditorWindowCriterion, Unity.Tutorials.Core.Editor,
+              Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+          Criterion: {fileID: 8181644099032959970}
+      m_PossibleErrors: []
+      m_MaskingSettings:
+        m_MaskingEnabled: 0
+        m_UnmaskedViews: []
+      m_Summary: 
+      m_Description: 
+      m_InstructionBoxTitle: 
+      m_InstructionText: 
+      m_TutorialButtonText: 
+      codeBlockText: 
+    - m_Type: 0
+      Title:
+        m_Untranslated: 
+      Text:
+        m_Untranslated: "\rThis will open the Sprite editor window that contains
+          a large version of the Explosion Spritesheet (it may be hard to see since
+          the pixels are white). Before continuing, let\u2019s quickly change the
+          display mode in the Sprite Editor window, so we can better see the sprite.
+          Click on the little red, green, and blue icon in the toolbar"
+      m_PollItems: []
+      m_PollCorrectItemIndexes: 00000000
+      m_Tutorial: {fileID: 0}
+      m_Image: {fileID: 0}
+      m_Video: {fileID: 0}
+      m_CriteriaCompletion: 2
+      m_Criteria:
+        m_Items: []
+      m_PossibleErrors: []
+      m_MaskingSettings:
+        m_MaskingEnabled: 0
+        m_UnmaskedViews: []
+      m_Summary: 
+      m_Description: 
+      m_InstructionBoxTitle: 
+      m_InstructionText: 
+      m_TutorialButtonText: 
+      codeBlockText: 
+    - m_Type: 6
+      Title:
+        m_Untranslated: 
+      Text:
+        m_Untranslated: 
+      m_PollItems: []
+      m_PollCorrectItemIndexes: 00000000
+      m_Tutorial: {fileID: 0}
+      m_Image: {fileID: 2800000, guid: ac0ae03c092a96540bcf22f544ea0648, type: 3}
+      m_Video: {fileID: 0}
+      m_CriteriaCompletion: 2
+      m_Criteria:
+        m_Items: []
+      m_PossibleErrors: []
+      m_MaskingSettings:
+        m_MaskingEnabled: 0
+        m_UnmaskedViews: []
+      m_Summary: 
+      m_Description: 
+      m_InstructionBoxTitle: 
+      m_InstructionText: 
+      m_TutorialButtonText: 
+      codeBlockText: 
+    - m_Type: 0
+      Title:
+        m_Untranslated: 
+      Text:
+        m_Untranslated: "The Sprite Editor shows what Unity currently thinks the
+          extents of the Sprite are (the box around the whole image) and where the
+          Pivot (point the Sprite rotates around) is located (as a circle in the
+          centre). These values are shown exactly in the overlaid window in bottom-right.\nWe
+          don\u2019t need to change any of those values for the Explosion, but do
+          take note of the size (578x442 pixels) for later. "
+      m_PollItems: []
+      m_PollCorrectItemIndexes: 00000000
+      m_Tutorial: {fileID: 0}
+      m_Image: {fileID: 0}
+      m_Video: {fileID: 0}
+      m_CriteriaCompletion: 2
+      m_Criteria:
+        m_Items: []
+      m_PossibleErrors: []
+      m_MaskingSettings:
+        m_MaskingEnabled: 0
+        m_UnmaskedViews: []
+      m_Summary: 
+      m_Description: 
+      m_InstructionBoxTitle: 
+      m_InstructionText: 
+      m_TutorialButtonText: 
+      codeBlockText: 
+  m_CameraSettings:
+    m_CameraMode: 0
+    m_FocusMode: 0
+    m_Orthographic: 0
+    m_Size: 0
+    m_Pivot: {x: 0, y: 0, z: 0}
+    m_Rotation: {x: 0, y: 0, z: 0, w: 0}
+    m_FrameObject:
+      m_SceneGuid: 
+      m_GameObjectGuid: 
+      m_SerializedComponentType:
+        m_TypeName: 
+      m_ComponentIndex: 0
+      m_AssetObject: {fileID: 0}
+      m_Prefab: {fileID: 0}
+    m_Enabled: 0
+  NextButton:
+    m_Untranslated: Next
+  DoneButton:
+    m_Untranslated: Done
+  m_NextButton: Next
+  m_DoneButton: Done
+  m_CompletedSound: {fileID: 0}
+  m_autoAdvance: 0
+  m_OnBeforePageShown:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnAfterPageShown:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnBeforeTutorialQuit:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnTutorialPageStay:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &8181644099032959970
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f095ab04ffe3b514c808035bb335fa56, type: 3}
+  m_Name: EditorWindowCriterion
+  m_EditorClassIdentifier: 
+  m_EditorWindowType:
+    m_TypeName: UnityEditor.U2D.Sprites.SpriteEditorWindow, Unity.2D.Sprite.Editor,
+      Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_CloseIfAlreadyOpen: 0

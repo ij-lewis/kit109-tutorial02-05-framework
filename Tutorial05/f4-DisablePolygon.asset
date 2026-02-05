@@ -1,0 +1,258 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-7649200036578430661
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7231e8df50e16c74c979c4a2affab91b, type: 3}
+  m_Name: ArbitraryCriterion
+  m_EditorClassIdentifier: 
+  m_Callback:
+    _target: {fileID: 11400000, guid: 31ceea5ab9f302449893df503cbfadd0, type: 2}
+    _methodName: F4PolygonColliderCurve
+    _args: []
+    _dynamic: 0
+    _typeName: Unity.Tutorials.Core.Editor.ArbitraryCriterion+BoolCallback, Unity.Tutorials.Core.Editor,
+      Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+    dirty: 0
+  m_AutoCompleteCallback:
+    _target: {fileID: 0}
+    _methodName: 
+    _args: []
+    _dynamic: 0
+    _typeName: Unity.Tutorials.Core.Editor.ArbitraryCriterion+BoolCallback, Unity.Tutorials.Core.Editor,
+      Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+    dirty: 0
+--- !u!114 &-450372230548221314
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7231e8df50e16c74c979c4a2affab91b, type: 3}
+  m_Name: ArbitraryCriterion
+  m_EditorClassIdentifier: 
+  m_Callback:
+    _target: {fileID: 11400000, guid: 31ceea5ab9f302449893df503cbfadd0, type: 2}
+    _methodName: F4PolygonColliderCurveFrame0
+    _args: []
+    _dynamic: 0
+    _typeName: Unity.Tutorials.Core.Editor.ArbitraryCriterion+BoolCallback, Unity.Tutorials.Core.Editor,
+      Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+    dirty: 0
+  m_AutoCompleteCallback:
+    _target: {fileID: 0}
+    _methodName: 
+    _args: []
+    _dynamic: 0
+    _typeName: Unity.Tutorials.Core.Editor.ArbitraryCriterion+BoolCallback, Unity.Tutorials.Core.Editor,
+      Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+    dirty: 0
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff771ccdf4150419d9ff4d342b069aae, type: 3}
+  m_Name: f4-DisablePolygon
+  m_EditorClassIdentifier: 
+  m_Paragraphs:
+    m_Items:
+    - m_Type: 0
+      Title:
+        m_Untranslated: Final Bug Fix
+      Text:
+        m_Untranslated: 'The collision problem can be fixed by turning off the Polygon
+          Collider 2D Component as soon as the explosion animation starts playing. '
+      m_PollItems: []
+      m_PollCorrectItemIndexes: 00000000
+      m_Tutorial: {fileID: 0}
+      m_Image: {fileID: 0}
+      m_Video: {fileID: 0}
+      m_CriteriaCompletion: 0
+      m_Criteria:
+        m_Items: []
+      m_PossibleErrors: []
+      m_MaskingSettings:
+        m_MaskingEnabled: 0
+        m_UnmaskedViews: []
+      m_Summary: 
+      m_Description: 
+      m_InstructionBoxTitle: 
+      m_InstructionText: 
+      m_TutorialButtonText: 
+      codeBlockText: 
+    - m_Type: 1
+      Title:
+        m_Untranslated: Add a new animation property, for the Polygon Collider 2D
+          "Enabled"
+      Text:
+        m_Untranslated: 'Click "Add Property" in the Animation window, and search
+          for the Polygon Collider Enabled property. <b>Note: This will only work
+          if you have the <go>Invaderoid</go> selected in the scene view!</b>'
+      m_PollItems: []
+      m_PollCorrectItemIndexes: 00000000
+      m_Tutorial: {fileID: 0}
+      m_Image: {fileID: 0}
+      m_Video: {fileID: 0}
+      m_CriteriaCompletion: 0
+      m_Criteria:
+        m_Items:
+        - Type:
+            m_TypeName: Unity.Tutorials.Core.Editor.ArbitraryCriterion, Unity.Tutorials.Core.Editor,
+              Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+          Criterion: {fileID: -7649200036578430661}
+      m_PossibleErrors: []
+      m_MaskingSettings:
+        m_MaskingEnabled: 0
+        m_UnmaskedViews: []
+      m_Summary: 
+      m_Description: 
+      m_InstructionBoxTitle: 
+      m_InstructionText: 
+      m_TutorialButtonText: 
+      codeBlockText: 
+    - m_Type: 6
+      Title:
+        m_Untranslated: 
+      Text:
+        m_Untranslated: 
+      m_PollItems: []
+      m_PollCorrectItemIndexes: 00000000
+      m_Tutorial: {fileID: 0}
+      m_Image: {fileID: 2800000, guid: 6e981f1a01a3df74f9f86d5d38aa4078, type: 3}
+      m_Video: {fileID: 0}
+      m_CriteriaCompletion: 0
+      m_Criteria:
+        m_Items: []
+      m_PossibleErrors: []
+      m_MaskingSettings:
+        m_MaskingEnabled: 0
+        m_UnmaskedViews: []
+      m_Summary: 
+      m_Description: 
+      m_InstructionBoxTitle: 
+      m_InstructionText: 
+      m_TutorialButtonText: 
+      codeBlockText: 
+    - m_Type: 1
+      Title:
+        m_Untranslated: Create a Key Frame to Disable the Polygon Collider
+      Text:
+        m_Untranslated: Add this key frame at time 0:00
+      m_PollItems: []
+      m_PollCorrectItemIndexes: 00000000
+      m_Tutorial: {fileID: 0}
+      m_Image: {fileID: 0}
+      m_Video: {fileID: 0}
+      m_CriteriaCompletion: 0
+      m_Criteria:
+        m_Items:
+        - Type:
+            m_TypeName: Unity.Tutorials.Core.Editor.ArbitraryCriterion, Unity.Tutorials.Core.Editor,
+              Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+          Criterion: {fileID: -450372230548221314}
+      m_PossibleErrors: []
+      m_MaskingSettings:
+        m_MaskingEnabled: 0
+        m_UnmaskedViews: []
+      m_Summary: 
+      m_Description: 
+      m_InstructionBoxTitle: 
+      m_InstructionText: 
+      m_TutorialButtonText: 
+      codeBlockText: 
+    - m_Type: 0
+      Title:
+        m_Untranslated: 
+      Text:
+        m_Untranslated: 'Your animation should look like this now:'
+      m_PollItems: []
+      m_PollCorrectItemIndexes: 00000000
+      m_Tutorial: {fileID: 0}
+      m_Image: {fileID: 0}
+      m_Video: {fileID: 0}
+      m_CriteriaCompletion: 0
+      m_Criteria:
+        m_Items: []
+      m_PossibleErrors: []
+      m_MaskingSettings:
+        m_MaskingEnabled: 0
+        m_UnmaskedViews: []
+      m_Summary: 
+      m_Description: 
+      m_InstructionBoxTitle: 
+      m_InstructionText: 
+      m_TutorialButtonText: 
+      codeBlockText: 
+    - m_Type: 6
+      Title:
+        m_Untranslated: 
+      Text:
+        m_Untranslated: 
+      m_PollItems: []
+      m_PollCorrectItemIndexes: 00000000
+      m_Tutorial: {fileID: 0}
+      m_Image: {fileID: 2800000, guid: 059c5ef9954d4e84995247e41c7e1f94, type: 3}
+      m_Video: {fileID: 0}
+      m_CriteriaCompletion: 0
+      m_Criteria:
+        m_Items: []
+      m_PossibleErrors: []
+      m_MaskingSettings:
+        m_MaskingEnabled: 0
+        m_UnmaskedViews: []
+      m_Summary: 
+      m_Description: 
+      m_InstructionBoxTitle: 
+      m_InstructionText: 
+      m_TutorialButtonText: 
+      codeBlockText: 
+  m_CameraSettings:
+    m_CameraMode: 0
+    m_FocusMode: 0
+    m_Orthographic: 0
+    m_Size: 0
+    m_Pivot: {x: 0, y: 0, z: 0}
+    m_Rotation: {x: 0, y: 0, z: 0, w: 0}
+    m_FrameObject:
+      m_SceneGuid: 
+      m_GameObjectGuid: 
+      m_SerializedComponentType:
+        m_TypeName: 
+      m_ComponentIndex: 0
+      m_AssetObject: {fileID: 0}
+      m_Prefab: {fileID: 0}
+    m_Enabled: 0
+  NextButton:
+    m_Untranslated: Next
+  DoneButton:
+    m_Untranslated: Done
+  m_NextButton: Next
+  m_DoneButton: Done
+  m_CompletedSound: {fileID: 0}
+  m_autoAdvance: 0
+  m_OnBeforePageShown:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnAfterPageShown:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnBeforeTutorialQuit:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnTutorialPageStay:
+    m_PersistentCalls:
+      m_Calls: []

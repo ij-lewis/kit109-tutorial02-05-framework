@@ -1,0 +1,143 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff771ccdf4150419d9ff4d342b069aae, type: 3}
+  m_Name: f3-Singletons
+  m_EditorClassIdentifier: 
+  m_Paragraphs:
+    m_Items:
+    - m_Type: 0
+      Title:
+        m_Untranslated: Singletons
+      Text:
+        m_Untranslated: "Having multiple managers like this causes some nasty bugs.\nSo,
+          we need to make sure that the High Scores GameObject can only appear once
+          and we need a way of being able to get access to the values it holds. \nThere
+          are two ways to do this: using a static class (with static variables) or
+          using a Singleton object. We are going to use a Singleton object because
+          it allows us slightly more flexibility in the Unity editor (e.g. we can
+          still use the Inspector to see its values and we can drag-and-drop values)
+          at the cost of slightly more cumbersome usage.\nThe idea of a Singleton
+          is that it is a kind of object that enforces that only one copy of it exists
+          (exactly what we need) and it provides a variable that can be used to directly
+          access itself.\r\nWe are going to use a Singleton class created for use
+          with Unity that has two extra properties: it will create a GameObject of
+          its type if some piece of code attempts to use it before it exists, and
+          it ensures it isn\u2019t destroyed on scene loads (as we did above).\r\n"
+      m_PollItems: []
+      m_PollCorrectItemIndexes: 00000000
+      m_Tutorial: {fileID: 0}
+      m_Image: {fileID: 0}
+      m_Video: {fileID: 0}
+      m_CriteriaCompletion: 0
+      m_Criteria:
+        m_Items: []
+      m_PossibleErrors: []
+      m_MaskingSettings:
+        m_MaskingEnabled: 0
+        m_UnmaskedViews: []
+      m_Summary: 
+      m_Description: 
+      m_InstructionBoxTitle: 
+      m_InstructionText: 
+      m_TutorialButtonText: 
+      codeBlockText: 
+    - m_Type: 1
+      Title:
+        m_Untranslated: Make HighScoreManager a Singleton
+      Text:
+        m_Untranslated: 'In <asset>HighScoreManager</asset> change the class declaration
+          to be the following:
+
+          <code>
+
+          public class HighScoreManager
+          : UnitySingletonPersistent<HighScore> {
+
+          </code>'
+      m_PollItems: []
+      m_PollCorrectItemIndexes: 00000000
+      m_Tutorial: {fileID: 0}
+      m_Image: {fileID: 0}
+      m_Video: {fileID: 0}
+      m_CriteriaCompletion: 2
+      m_Criteria:
+        m_Items: []
+      m_PossibleErrors: []
+      m_MaskingSettings:
+        m_MaskingEnabled: 0
+        m_UnmaskedViews: []
+      m_Summary: 
+      m_Description: 
+      m_InstructionBoxTitle: 
+      m_InstructionText: 
+      m_TutorialButtonText: 
+      codeBlockText: 
+    - m_Type: 1
+      Title:
+        m_Untranslated: Remove the Start Function from HighScoreManager
+      Text:
+        m_Untranslated: Singletons manage themselves between scense and don't need
+          <c>DontDestroyOnLoad</c>.
+      m_PollItems: []
+      m_PollCorrectItemIndexes: 00000000
+      m_Tutorial: {fileID: 0}
+      m_Image: {fileID: 0}
+      m_Video: {fileID: 0}
+      m_CriteriaCompletion: 2
+      m_Criteria:
+        m_Items: []
+      m_PossibleErrors: []
+      m_MaskingSettings:
+        m_MaskingEnabled: 0
+        m_UnmaskedViews: []
+      m_Summary: 
+      m_Description: 
+      m_InstructionBoxTitle: 
+      m_InstructionText: 
+      m_TutorialButtonText: 
+      codeBlockText: 
+  m_CameraSettings:
+    m_CameraMode: 0
+    m_FocusMode: 0
+    m_Orthographic: 0
+    m_Size: 0
+    m_Pivot: {x: 0, y: 0, z: 0}
+    m_Rotation: {x: 0, y: 0, z: 0, w: 0}
+    m_FrameObject:
+      m_SceneGuid: 
+      m_GameObjectGuid: 
+      m_SerializedComponentType:
+        m_TypeName: 
+      m_ComponentIndex: 0
+      m_AssetObject: {fileID: 0}
+      m_Prefab: {fileID: 0}
+    m_Enabled: 0
+  NextButton:
+    m_Untranslated: Next
+  DoneButton:
+    m_Untranslated: Done
+  m_NextButton: Next
+  m_DoneButton: Done
+  m_CompletedSound: {fileID: 0}
+  m_autoAdvance: 0
+  m_OnBeforePageShown:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnAfterPageShown:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnBeforeTutorialQuit:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnTutorialPageStay:
+    m_PersistentCalls:
+      m_Calls: []

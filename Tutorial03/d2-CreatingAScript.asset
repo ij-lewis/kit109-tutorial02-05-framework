@@ -1,0 +1,222 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-5171221907209292957
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7231e8df50e16c74c979c4a2affab91b, type: 3}
+  m_Name: ArbitraryCriterion
+  m_EditorClassIdentifier: 
+  m_Callback:
+    _target: {fileID: 11400000, guid: a6c48c460cc836647af8235ee9134e1e, type: 2}
+    _methodName: D2PickupHasMoveToRandom
+    _args: []
+    _dynamic: 0
+    _typeName: Unity.Tutorials.Core.Editor.ArbitraryCriterion+BoolCallback, Unity.Tutorials.Core.Editor,
+      Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+    dirty: 0
+  m_AutoCompleteCallback:
+    _target: {fileID: 0}
+    _methodName: 
+    _args: []
+    _dynamic: 0
+    _typeName: Unity.Tutorials.Core.Editor.ArbitraryCriterion+BoolCallback, Unity.Tutorials.Core.Editor,
+      Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+    dirty: 0
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff771ccdf4150419d9ff4d342b069aae, type: 3}
+  m_Name: d2-CreatingAScript
+  m_EditorClassIdentifier: 
+  m_Paragraphs:
+    m_Items:
+    - m_Type: 6
+      Title:
+        m_Untranslated: 
+      Text:
+        m_Untranslated: 
+      m_PollItems: []
+      m_PollCorrectItemIndexes: 00000000
+      m_Tutorial: {fileID: 0}
+      m_Image: {fileID: 0}
+      m_Video: {fileID: 0}
+      m_CriteriaCompletion: 0
+      m_Criteria:
+        m_Items: []
+      m_PossibleErrors: []
+      m_MaskingSettings:
+        m_MaskingEnabled: 0
+        m_UnmaskedViews: []
+      m_Summary: 
+      m_Description: 
+      m_InstructionBoxTitle: 
+      m_InstructionText: 
+      m_TutorialButtonText: 
+      codeBlockText: 
+    - m_Type: 0
+      Title:
+        m_Untranslated: Creating a Script
+      Text:
+        m_Untranslated: "Now we are going to create our first script from scratch.
+          This script will be responsible for moving the pickup to another location
+          when the player collides with it (we will add another script for adding
+          to the player\u2019s score later).\r\nYou can create a new script in three
+          ways. \n1. Click the \u201CAdd Component\u201D button on the game object
+          you want to attach your script to (in this case the Pickup game object),
+          and start typing the name of the new scrip. Then click the \u201CNew Script\u201D
+          button (or press enter, as this option is selected), and click \u201CCreate
+          and Add\u201D (or again, press enter). \n2. Right-click in the project
+          window, select \u201CCreate\u201D, and choose \u201CMonoBehaviour Script\u201D.
+          A new script will appear in the project window, where you can enter the
+          new name of your script. \n3. Or you can choose \u201CCreate\u201D from
+          the \u201CAssets\u201D menu, and select \u201CMonoBehaviour Script\u201D.
+          If you chose either of these last two options, you will need to add the
+          script to your Pickup game object.\r"
+      m_PollItems: []
+      m_PollCorrectItemIndexes: 00000000
+      m_Tutorial: {fileID: 0}
+      m_Image: {fileID: 0}
+      m_Video: {fileID: 0}
+      m_CriteriaCompletion: 0
+      m_Criteria:
+        m_Items: []
+      m_PossibleErrors: []
+      m_MaskingSettings:
+        m_MaskingEnabled: 0
+        m_UnmaskedViews: []
+      m_Summary: 
+      m_Description: 
+      m_InstructionBoxTitle: 
+      m_InstructionText: 
+      m_TutorialButtonText: 
+      codeBlockText: 
+    - m_Type: 1
+      Title:
+        m_Untranslated: Create a Script called MoveToRandomPositionOnCollision Script
+          on the Pickup
+      Text:
+        m_Untranslated: 'Attach this script to the <go>Pickup</go> game object.
+
+          You
+          have to spell this <b>exactly right</b> for this step to be detected as
+          complete!'
+      m_PollItems: []
+      m_PollCorrectItemIndexes: 00000000
+      m_Tutorial: {fileID: 0}
+      m_Image: {fileID: 0}
+      m_Video: {fileID: 0}
+      m_CriteriaCompletion: 0
+      m_Criteria:
+        m_Items:
+        - Type:
+            m_TypeName: Unity.Tutorials.Core.Editor.ArbitraryCriterion, Unity.Tutorials.Core.Editor,
+              Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+          Criterion: {fileID: -5171221907209292957}
+      m_PossibleErrors: []
+      m_MaskingSettings:
+        m_MaskingEnabled: 0
+        m_UnmaskedViews: []
+      m_Summary: 
+      m_Description: 
+      m_InstructionBoxTitle: 
+      m_InstructionText: 
+      m_TutorialButtonText: 
+      codeBlockText: 
+    - m_Type: 0
+      Title:
+        m_Untranslated: 
+      Text:
+        m_Untranslated: "Note that the name of your script file must match the name
+          of the class in your script (\u201C<asset>MoveToRandomPositionOnCollision</asset>
+          \u201D). Unity will automatically generate the file using the name you
+          entered when you created it, however future changes to this filename will
+          not update the script and vice-versa.\r"
+      m_PollItems: []
+      m_PollCorrectItemIndexes: 00000000
+      m_Tutorial: {fileID: 0}
+      m_Image: {fileID: 0}
+      m_Video: {fileID: 0}
+      m_CriteriaCompletion: 2
+      m_Criteria:
+        m_Items: []
+      m_PossibleErrors: []
+      m_MaskingSettings:
+        m_MaskingEnabled: 0
+        m_UnmaskedViews: []
+      m_Summary: 
+      m_Description: 
+      m_InstructionBoxTitle: 
+      m_InstructionText: 
+      m_TutorialButtonText: 
+      codeBlockText: 
+    - m_Type: 1
+      Title:
+        m_Untranslated: Open the MoveToRandomPositionOnCollisionScript
+      Text:
+        m_Untranslated: 
+      m_PollItems: []
+      m_PollCorrectItemIndexes: 00000000
+      m_Tutorial: {fileID: 0}
+      m_Image: {fileID: 0}
+      m_Video: {fileID: 0}
+      m_CriteriaCompletion: 2
+      m_Criteria:
+        m_Items: []
+      m_PossibleErrors: []
+      m_MaskingSettings:
+        m_MaskingEnabled: 0
+        m_UnmaskedViews: []
+      m_Summary: 
+      m_Description: 
+      m_InstructionBoxTitle: 
+      m_InstructionText: 
+      m_TutorialButtonText: 
+      codeBlockText: 
+  m_CameraSettings:
+    m_CameraMode: 0
+    m_FocusMode: 0
+    m_Orthographic: 0
+    m_Size: 0
+    m_Pivot: {x: 0, y: 0, z: 0}
+    m_Rotation: {x: 0, y: 0, z: 0, w: 0}
+    m_FrameObject:
+      m_SceneGuid: 
+      m_GameObjectGuid: 
+      m_SerializedComponentType:
+        m_TypeName: 
+      m_ComponentIndex: 0
+      m_AssetObject: {fileID: 0}
+      m_Prefab: {fileID: 0}
+    m_Enabled: 0
+  NextButton:
+    m_Untranslated: Next
+  DoneButton:
+    m_Untranslated: Done
+  m_NextButton: Next
+  m_DoneButton: Done
+  m_CompletedSound: {fileID: 0}
+  m_autoAdvance: 0
+  m_OnBeforePageShown:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnAfterPageShown:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnBeforeTutorialQuit:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnTutorialPageStay:
+    m_PersistentCalls:
+      m_Calls: []

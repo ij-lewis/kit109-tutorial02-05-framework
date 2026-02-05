@@ -1,0 +1,51 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f107dc6d4c984c45bdafd3bb15f98f0, type: 3}
+  m_Name: Tutorial05c-SpriteSheetAnimation
+  m_EditorClassIdentifier: 
+  TutorialTitle:
+    m_Untranslated: Tutorial 5c - Animating Spritesheets
+  m_TutorialTitle: 
+  m_LessonId: 503
+  m_Version: 1
+  m_Scene: {fileID: 102900000, guid: a52f860b690942944850cf3c794931c8, type: 3}
+  m_OrOpenSceneName: 
+  m_DefaultSceneCameraSettings:
+    m_CameraMode: 0
+    m_FocusMode: 0
+    m_Orthographic: 0
+    m_Size: 0
+    m_Pivot: {x: 0, y: 0, z: 0}
+    m_Rotation: {x: 0, y: 0, z: 0, w: 0}
+    m_FrameObject:
+      m_SceneGuid: 
+      m_GameObjectGuid: 
+      m_SerializedComponentType:
+        m_TypeName: 
+      m_ComponentIndex: 0
+      m_AssetObject: {fileID: 0}
+      m_Prefab: {fileID: 0}
+    m_Enabled: 0
+  m_SkipTutorialBehavior: 0
+  m_WindowLayout: {fileID: 0}
+  m_Pages:
+    m_Items:
+    - {fileID: 11400000, guid: 206cd091409013847bf758e838489faf, type: 2}
+    - {fileID: 11400000, guid: 94f4349d6222a594296cb8a425b70c20, type: 2}
+    - {fileID: 11400000, guid: 6dd8003a41ba60b418c67acbc2798bed, type: 2}
+    - {fileID: 11400000, guid: 2f84eb64699d808408148b1e97ea8672, type: 2}
+    - {fileID: 11400000, guid: 09cfd45d522721f4d9da3afa56da4e04, type: 2}
+    - {fileID: 11400000, guid: 458f2de642a7b5f4695aa600d7b9fe29, type: 2}
+    - {fileID: 11400000, guid: 1e9dd4a8e2eb7fc4a9dee12803e7c74e, type: 2}
+    - {fileID: 11400000, guid: ca398fbe90c17084c8587411ee03d80e, type: 2}
+    - {fileID: 11400000, guid: 8ded5aa26c49cc2448f46fa21aa9bf70, type: 2}
+    - {fileID: 11400000, guid: 88a7d85d87600b745b77cb2c251c476a, type: 2}

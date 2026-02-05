@@ -1,0 +1,120 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff771ccdf4150419d9ff4d342b069aae, type: 3}
+  m_Name: c3-Velocity
+  m_EditorClassIdentifier: 
+  m_Paragraphs:
+    m_Items:
+    - m_Type: 6
+      Title:
+        m_Untranslated: 
+      Text:
+        m_Untranslated: 
+      m_PollItems: []
+      m_PollCorrectItemIndexes: 00000000
+      m_Tutorial: {fileID: 0}
+      m_Image: {fileID: 0}
+      m_Video: {fileID: 0}
+      m_CriteriaCompletion: 0
+      m_Criteria:
+        m_Items: []
+      m_PossibleErrors: []
+      m_MaskingSettings:
+        m_MaskingEnabled: 0
+        m_UnmaskedViews: []
+      m_Summary: 
+      m_Description: 
+      m_InstructionBoxTitle: 
+      m_InstructionText: 
+      m_TutorialButtonText: 
+      codeBlockText: 
+    - m_Type: 0
+      Title:
+        m_Untranslated: Line 15-23 - Velocity of New Object
+      Text:
+        m_Untranslated: "<code>\n// get the velocity (i.e. direction and speed) of
+          the ship's movement\nVector2 shipVelocity = GetComponent&lt;Rigidbody2D&gt;().velocity;\n\n//
+          get the direction the ship is facing\r\nVector2 shipDirection = transform.up;\r\n\r\n//
+          set the bullet's velocity (direction and speed) to be the current speed
+          of the player ship\r\n// PLUS the angle the ship is facing multiplied by
+          the bullet's speed\r\nbullet.GetComponent&lt;Rigidbody2D&gt;().velocity
+          = shipVelocity + shipDirection * bulletSpeed;\n</code>\nOnce this <asset>Bullet</asset>
+          Prefab copy/clone has been created on line 13 we first get some information
+          about the ship (lines 16 and 19).\n\nLine 16 gets the velocity (i.e. the
+          direction and speed) of the player ship and stores it in a variable <c>shipVelocity</c>.\n\nLine
+          19 gets a vector representing the \"up\" direction of the player ship.
+          It might seem that \"up\" always points up the screen, but an object's
+          transform can have changes applied, in our case, the ship can be rotated,
+          and so \"up\" represents the direction the ship is currently facing. \nNote:\n\u2022
+          This \"up\" vector is always of length 1 (i.e. it has no speed associated
+          with it), so we can think about it as a direction.\n\u2022 There's also
+          a <c>transform.right</c> which can be useful (but no \"down\" or \"left\",
+          you just use a minus to get those). \n\u2022 See <a href=\"https://docs.unity3d.com/ScriptReference/Transform.html\">Transform
+          </a>, in the unity docs, for more information. Specifically <a href=\"https://docs.unity3d.com/ScriptReference/Transform-up.html\">Transform.up</a>
+          and <a href=\"https://docs.unity3d.com/ScriptReference/Transform-right.html\">Transform.right</a>.\n\nFinally,
+          line 23 sets the bullet's velocity to be calculated based upon the combination
+          of the player ship's movement, the direction the ship is facing, and the
+          <c>bulletSpeed</c> public variable.\n"
+      m_PollItems: []
+      m_PollCorrectItemIndexes: 00000000
+      m_Tutorial: {fileID: 0}
+      m_Image: {fileID: 0}
+      m_Video: {fileID: 0}
+      m_CriteriaCompletion: 0
+      m_Criteria:
+        m_Items: []
+      m_PossibleErrors: []
+      m_MaskingSettings:
+        m_MaskingEnabled: 0
+        m_UnmaskedViews: []
+      m_Summary: 
+      m_Description: 
+      m_InstructionBoxTitle: 
+      m_InstructionText: 
+      m_TutorialButtonText: 
+      codeBlockText: 
+  m_CameraSettings:
+    m_CameraMode: 0
+    m_FocusMode: 0
+    m_Orthographic: 0
+    m_Size: 0
+    m_Pivot: {x: 0, y: 0, z: 0}
+    m_Rotation: {x: 0, y: 0, z: 0, w: 0}
+    m_FrameObject:
+      m_SceneGuid: 
+      m_GameObjectGuid: 
+      m_SerializedComponentType:
+        m_TypeName: 
+      m_ComponentIndex: 0
+      m_AssetObject: {fileID: 0}
+      m_Prefab: {fileID: 0}
+    m_Enabled: 0
+  NextButton:
+    m_Untranslated: Next
+  DoneButton:
+    m_Untranslated: Done
+  m_NextButton: Next
+  m_DoneButton: Done
+  m_CompletedSound: {fileID: 0}
+  m_autoAdvance: 0
+  m_OnBeforePageShown:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnAfterPageShown:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnBeforeTutorialQuit:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnTutorialPageStay:
+    m_PersistentCalls:
+      m_Calls: []

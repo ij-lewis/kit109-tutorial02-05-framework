@@ -1,0 +1,324 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-7067305362456642220
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7231e8df50e16c74c979c4a2affab91b, type: 3}
+  m_Name: ArbitraryCriterion
+  m_EditorClassIdentifier: 
+  m_Callback:
+    _target: {fileID: 11400000, guid: e4b4d78b71e85ce49905967730209ea6, type: 2}
+    _methodName: D1SceneSwitcher
+    _args: []
+    _dynamic: 0
+    _typeName: Unity.Tutorials.Core.Editor.ArbitraryCriterion+BoolCallback, Unity.Tutorials.Core.Editor,
+      Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+    dirty: 0
+  m_AutoCompleteCallback:
+    _target: {fileID: 0}
+    _methodName: 
+    _args: []
+    _dynamic: 0
+    _typeName: Unity.Tutorials.Core.Editor.ArbitraryCriterion+BoolCallback, Unity.Tutorials.Core.Editor,
+      Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+    dirty: 0
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff771ccdf4150419d9ff4d342b069aae, type: 3}
+  m_Name: d2-SceneSwitcher2
+  m_EditorClassIdentifier: 
+  m_Paragraphs:
+    m_Items:
+    - m_Type: 0
+      Title:
+        m_Untranslated: Switching Scenes - With a Button Event
+      Text:
+        m_Untranslated: "To detect a Button has been clicked, we use <b>Events</b>.
+          \n<b>Events</b> trigger <b>Functions</b> on <b>Components</b> attached
+          to <b>Game Objects</b>.\nWe will make it so the <b>Button Click</b> event
+          triggers the <b>SwitchScene</b> function on the <b>SceneSwitcher</b> component.
+          We can attach SceneSwitcher to any Game Object but for simplicity, we will
+          add it to the <b>Start Game</b> button itself."
+      m_PollItems: []
+      m_PollCorrectItemIndexes: 00000000
+      m_Tutorial: {fileID: 0}
+      m_Image: {fileID: 0}
+      m_Video: {fileID: 0}
+      m_CriteriaCompletion: 0
+      m_Criteria:
+        m_Items: []
+      m_PossibleErrors: []
+      m_MaskingSettings:
+        m_MaskingEnabled: 0
+        m_UnmaskedViews: []
+      m_Summary: 
+      m_Description: 
+      m_InstructionBoxTitle: 
+      m_InstructionText: 
+      m_TutorialButtonText: 
+      codeBlockText: 
+    - m_Type: 1
+      Title:
+        m_Untranslated: Add the SceneSwitcher script to the Start Game Button
+      Text:
+        m_Untranslated: 
+      m_PollItems: []
+      m_PollCorrectItemIndexes: 00000000
+      m_Tutorial: {fileID: 0}
+      m_Image: {fileID: 0}
+      m_Video: {fileID: 0}
+      m_CriteriaCompletion: 0
+      m_Criteria:
+        m_Items:
+        - Type:
+            m_TypeName: Unity.Tutorials.Core.Editor.ArbitraryCriterion, Unity.Tutorials.Core.Editor,
+              Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+          Criterion: {fileID: -7067305362456642220}
+      m_PossibleErrors: []
+      m_MaskingSettings:
+        m_MaskingEnabled: 0
+        m_UnmaskedViews: []
+      m_Summary: 
+      m_Description: 
+      m_InstructionBoxTitle: 
+      m_InstructionText: 
+      m_TutorialButtonText: 
+      codeBlockText: 
+    - m_Type: 1
+      Title:
+        m_Untranslated: Link Up the On Click Event Target
+      Text:
+        m_Untranslated: 'Click the + on the OnClick () list on the <go>Start Game</go>
+          Button.
+
+          Drag the Start Game Button to the <b>target</b> field
+          that appears.'
+      m_PollItems: []
+      m_PollCorrectItemIndexes: 00000000
+      m_Tutorial: {fileID: 0}
+      m_Image: {fileID: 0}
+      m_Video: {fileID: 0}
+      m_CriteriaCompletion: 0
+      m_Criteria:
+        m_Items:
+        - Type:
+            m_TypeName: Unity.Tutorials.Core.Editor.ArbitraryCriterion, Unity.Tutorials.Core.Editor,
+              Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+          Criterion: {fileID: 7874746947734763212}
+      m_PossibleErrors: []
+      m_MaskingSettings:
+        m_MaskingEnabled: 0
+        m_UnmaskedViews: []
+      m_Summary: 
+      m_Description: 
+      m_InstructionBoxTitle: 
+      m_InstructionText: 
+      m_TutorialButtonText: 
+      codeBlockText: 
+    - m_Type: 1
+      Title:
+        m_Untranslated: Link Up the On Click Event Function
+      Text:
+        m_Untranslated: In the Function list, select <b>SceneSwitcher ->&gt; SwitchScene(string)</b>.
+      m_PollItems: []
+      m_PollCorrectItemIndexes: 00000000
+      m_Tutorial: {fileID: 0}
+      m_Image: {fileID: 2800000, guid: 2d4eafa306f1cff4990993bd9c9ffec2, type: 3}
+      m_Video: {fileID: 0}
+      m_CriteriaCompletion: 0
+      m_Criteria:
+        m_Items:
+        - Type:
+            m_TypeName: Unity.Tutorials.Core.Editor.ArbitraryCriterion, Unity.Tutorials.Core.Editor,
+              Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+          Criterion: {fileID: 7441802348452298452}
+      m_PossibleErrors: []
+      m_MaskingSettings:
+        m_MaskingEnabled: 0
+        m_UnmaskedViews: []
+      m_Summary: 
+      m_Description: 
+      m_InstructionBoxTitle: 
+      m_InstructionText: 
+      m_TutorialButtonText: 
+      codeBlockText: 
+    - m_Type: 1
+      Title:
+        m_Untranslated: 
+      Text:
+        m_Untranslated: Enter "Invaderoids" for the Scene Name.
+      m_PollItems: []
+      m_PollCorrectItemIndexes: 00000000
+      m_Tutorial: {fileID: 0}
+      m_Image: {fileID: 2800000, guid: 2d4eafa306f1cff4990993bd9c9ffec2, type: 3}
+      m_Video: {fileID: 0}
+      m_CriteriaCompletion: 2
+      m_Criteria:
+        m_Items: []
+      m_PossibleErrors: []
+      m_MaskingSettings:
+        m_MaskingEnabled: 0
+        m_UnmaskedViews: []
+      m_Summary: 
+      m_Description: 
+      m_InstructionBoxTitle: 
+      m_InstructionText: 
+      m_TutorialButtonText: 
+      codeBlockText: 
+    - m_Type: 6
+      Title:
+        m_Untranslated: 
+      Text:
+        m_Untranslated: 
+      m_PollItems: []
+      m_PollCorrectItemIndexes: 00000000
+      m_Tutorial: {fileID: 0}
+      m_Image: {fileID: 2800000, guid: 2d4eafa306f1cff4990993bd9c9ffec2, type: 3}
+      m_Video: {fileID: 0}
+      m_CriteriaCompletion: 0
+      m_Criteria:
+        m_Items: []
+      m_PossibleErrors: []
+      m_MaskingSettings:
+        m_MaskingEnabled: 0
+        m_UnmaskedViews: []
+      m_Summary: 
+      m_Description: 
+      m_InstructionBoxTitle: 
+      m_InstructionText: 
+      m_TutorialButtonText: 
+      codeBlockText: 
+    - m_Type: 0
+      Title:
+        m_Untranslated: 
+      Text:
+        m_Untranslated: "The last dropdown you used will list all the components
+          on the target object you selected which have valid functions which can
+          be called, allowing you to trigger (effectively) any code you like from
+          your UI components. A function is valid when:\r\n\u2022 It has a return
+          type of <c>void</c> (i.e. it returns nothing); and\r\n\u2022 It has no
+          parameters or a single parameter which Unity can understand (e.g. <c>int</c>
+          , <c>float</c>, <c>bool</c>, <c>Transform</c>, <c>GameObject</c>, etc).\r"
+      m_PollItems: []
+      m_PollCorrectItemIndexes: 00000000
+      m_Tutorial: {fileID: 0}
+      m_Image: {fileID: 2800000, guid: 2d4eafa306f1cff4990993bd9c9ffec2, type: 3}
+      m_Video: {fileID: 0}
+      m_CriteriaCompletion: 0
+      m_Criteria:
+        m_Items: []
+      m_PossibleErrors: []
+      m_MaskingSettings:
+        m_MaskingEnabled: 0
+        m_UnmaskedViews: []
+      m_Summary: 
+      m_Description: 
+      m_InstructionBoxTitle: 
+      m_InstructionText: 
+      m_TutorialButtonText: 
+      codeBlockText: 
+  m_CameraSettings:
+    m_CameraMode: 0
+    m_FocusMode: 0
+    m_Orthographic: 0
+    m_Size: 0
+    m_Pivot: {x: 0, y: 0, z: 0}
+    m_Rotation: {x: 0, y: 0, z: 0, w: 0}
+    m_FrameObject:
+      m_SceneGuid: 
+      m_GameObjectGuid: 
+      m_SerializedComponentType:
+        m_TypeName: 
+      m_ComponentIndex: 0
+      m_AssetObject: {fileID: 0}
+      m_Prefab: {fileID: 0}
+    m_Enabled: 0
+  NextButton:
+    m_Untranslated: Next
+  DoneButton:
+    m_Untranslated: Done
+  m_NextButton: Next
+  m_DoneButton: Done
+  m_CompletedSound: {fileID: 0}
+  m_autoAdvance: 0
+  m_OnBeforePageShown:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnAfterPageShown:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnBeforeTutorialQuit:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnTutorialPageStay:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &7441802348452298452
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7231e8df50e16c74c979c4a2affab91b, type: 3}
+  m_Name: ArbitraryCriterion
+  m_EditorClassIdentifier: 
+  m_Callback:
+    _target: {fileID: 11400000, guid: e4b4d78b71e85ce49905967730209ea6, type: 2}
+    _methodName: D1EventFunction
+    _args: []
+    _dynamic: 0
+    _typeName: Unity.Tutorials.Core.Editor.ArbitraryCriterion+BoolCallback, Unity.Tutorials.Core.Editor,
+      Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+    dirty: 0
+  m_AutoCompleteCallback:
+    _target: {fileID: 0}
+    _methodName: 
+    _args: []
+    _dynamic: 0
+    _typeName: Unity.Tutorials.Core.Editor.ArbitraryCriterion+BoolCallback, Unity.Tutorials.Core.Editor,
+      Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+    dirty: 0
+--- !u!114 &7874746947734763212
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7231e8df50e16c74c979c4a2affab91b, type: 3}
+  m_Name: ArbitraryCriterion
+  m_EditorClassIdentifier: 
+  m_Callback:
+    _target: {fileID: 11400000, guid: e4b4d78b71e85ce49905967730209ea6, type: 2}
+    _methodName: D1EventTarget
+    _args: []
+    _dynamic: 0
+    _typeName: Unity.Tutorials.Core.Editor.ArbitraryCriterion+BoolCallback, Unity.Tutorials.Core.Editor,
+      Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+    dirty: 0
+  m_AutoCompleteCallback:
+    _target: {fileID: 0}
+    _methodName: 
+    _args: []
+    _dynamic: 0
+    _typeName: Unity.Tutorials.Core.Editor.ArbitraryCriterion+BoolCallback, Unity.Tutorials.Core.Editor,
+      Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+    dirty: 0

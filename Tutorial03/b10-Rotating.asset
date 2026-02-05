@@ -1,0 +1,119 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff771ccdf4150419d9ff4d342b069aae, type: 3}
+  m_Name: b10-Rotating
+  m_EditorClassIdentifier: 
+  m_Paragraphs:
+    m_Items:
+    - m_Type: 6
+      Title:
+        m_Untranslated: 
+      Text:
+        m_Untranslated: 
+      m_PollItems: []
+      m_PollCorrectItemIndexes: 00000000
+      m_Tutorial: {fileID: 0}
+      m_Image: {fileID: 0}
+      disableImagePopup: 0
+      m_Video: {fileID: 0}
+      m_CriteriaCompletion: 0
+      m_Criteria:
+        m_Items: []
+      m_PossibleErrors: []
+      m_MaskingSettings:
+        m_MaskingEnabled: 0
+        m_UnmaskedViews: []
+      m_Summary: 
+      m_Description: 
+      m_InstructionBoxTitle: 
+      m_InstructionText: 
+      m_TutorialButtonText: 
+      codeBlockText: 
+    - m_Type: 0
+      Title:
+        m_Untranslated: Lines 20 and 27 - Rotating an Object in Code
+      Text:
+        m_Untranslated: "<code>\r\ntransform.Rotate(new Vector3(0, 0, rotationSpeed));\r\n</code>\r\nInside
+          the first two if-statements in the FixedUpdate function described above,
+          is code which changes the state of another Component on the player PlayerMovement
+          Script. In previous practicals, we have seen Component such as: Transform,
+          RigidBody2D, Collider2D, and Renderer. Each of these components are accessed
+          in code through an instance of a C# class (you can click these to go the
+          documentation):\r\n\u2022 <doc>Transform</doc>\r\n\u2022 <doc>Rigidbody2D</doc>\r\n\u2022
+          <doc>Collider2D</doc>\r\n\u2022 <doc>Renderer</doc>\r\nEvery Unity Component
+          has a corresponding C# class. \r\nThe PlayerMovement script moves the player
+          around by manipulating the Transform component. Such a task is so common
+          in Unity scripting that MonoBehaviour provides a shortcut variable for
+          accessing this component called transform.\r\n<b>Line 20</b> updates the
+          Transform Component of the Game Object by calling the <doc>Transform.Rotate</doc>
+          function using a <doc>Vector3</doc>. This Vector3 contains three values
+          that are added to the current rotations X, Y, and Z properties. Since we
+          are working in a 2D environment, we primarily want to rotate only around
+          the Z axis, so the X and Y values are set to 0. The rotation around the
+          Z axis is determined by the rotationSpeed public variable from line 8.
+          \r\n<b>Line 27</b> is similar to line 20, however the Z rotation is reversed
+          in order to achieve clockwise movement.\r\n"
+      m_PollItems: []
+      m_PollCorrectItemIndexes: 00000000
+      m_Tutorial: {fileID: 0}
+      m_Image: {fileID: 0}
+      disableImagePopup: 0
+      m_Video: {fileID: 0}
+      m_CriteriaCompletion: 0
+      m_Criteria:
+        m_Items: []
+      m_PossibleErrors: []
+      m_MaskingSettings:
+        m_MaskingEnabled: 0
+        m_UnmaskedViews: []
+      m_Summary: 
+      m_Description: 
+      m_InstructionBoxTitle: 
+      m_InstructionText: 
+      m_TutorialButtonText: 
+      codeBlockText: 
+  m_CameraSettings:
+    m_CameraMode: 0
+    m_FocusMode: 0
+    m_Orthographic: 0
+    m_Size: 0
+    m_Pivot: {x: 0, y: 0, z: 0}
+    m_Rotation: {x: 0, y: 0, z: 0, w: 0}
+    m_FrameObject:
+      m_SceneGuid: 
+      m_GameObjectGuid: 
+      m_SerializedComponentType:
+        m_TypeName: 
+      m_ComponentIndex: 0
+      m_AssetObject: {fileID: 0}
+      m_Prefab: {fileID: 0}
+    m_Enabled: 0
+  NextButton:
+    m_Untranslated: Next
+  DoneButton:
+    m_Untranslated: Done
+  m_NextButton: Next
+  m_DoneButton: Done
+  m_CompletedSound: {fileID: 0}
+  m_autoAdvance: 0
+  m_OnBeforePageShown:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnAfterPageShown:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnBeforeTutorialQuit:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnTutorialPageStay:
+    m_PersistentCalls:
+      m_Calls: []

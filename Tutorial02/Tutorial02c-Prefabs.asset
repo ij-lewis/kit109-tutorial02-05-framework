@@ -1,0 +1,50 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f107dc6d4c984c45bdafd3bb15f98f0, type: 3}
+  m_Name: Tutorial02c-Prefabs
+  m_EditorClassIdentifier: 
+  TutorialTitle:
+    m_Untranslated: Tutorial 2c - Prefabs
+  m_TutorialTitle: 
+  m_LessonId: 203
+  m_Version: 1
+  m_Scene: {fileID: 102900000, guid: a52f860b690942944850cf3c794931c8, type: 3}
+  m_DefaultSceneCameraSettings:
+    m_CameraMode: 0
+    m_FocusMode: 0
+    m_Orthographic: 0
+    m_Size: 0
+    m_Pivot: {x: 0, y: 0, z: 0}
+    m_Rotation: {x: 0, y: 0, z: 0, w: 0}
+    m_FrameObject:
+      m_SceneGuid: 
+      m_GameObjectGuid: 
+      m_SerializedComponentType:
+        m_TypeName: 
+      m_ComponentIndex: 0
+      m_AssetObject: {fileID: 0}
+      m_Prefab: {fileID: 0}
+    m_Enabled: 0
+  m_SkipTutorialBehavior: 0
+  m_WindowLayout: {fileID: 0}
+  m_Pages:
+    m_Items:
+    - {fileID: 11400000, guid: 595108059e3542149b0d0c5b98330c70, type: 2}
+    - {fileID: 11400000, guid: a4b3d574930145549ba72c54334b2177, type: 2}
+    - {fileID: 11400000, guid: c37d88dad513335409d523c0a48b7aca, type: 2}
+    - {fileID: 11400000, guid: dffd53cde1011f94cbc518f7efc39a47, type: 2}
+    - {fileID: 11400000, guid: af277da00b382c5459b8cde9039d74d5, type: 2}
+    - {fileID: 11400000, guid: b8771b1b19d394740a0f063656b440c6, type: 2}
+    - {fileID: 11400000, guid: bb5c3fea4b31f0645b0819394b68ca30, type: 2}
+    - {fileID: 11400000, guid: f284ea73287a7d94ca578835b979d9f3, type: 2}
+    - {fileID: 11400000, guid: cd1dfc327b5829e4d8bd229882c84368, type: 2}
+    - {fileID: 11400000, guid: b5ac8a336c7bc354cb595741650f06a6, type: 2}

@@ -1,0 +1,424 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 89305aa391d1c5141bbe1628d930a2c5, type: 3}
+  m_Name: Tutorials
+  m_EditorClassIdentifier: 
+  HeaderBackground: {fileID: 2800000, guid: adc1e3df3f467c34cb47f573ffd2293e, type: 3}
+  Title:
+    m_Untranslated: KIT109 Tutorials 2 to 5
+  Subtitle:
+    m_Untranslated: University of Tasmania
+  Description:
+    m_Untranslated: 
+  ProjectLayout: {fileID: 0}
+  currentTutorialSystemVersion: 100
+  currentTutorialContentVersion: 4
+  guildID: 1336888958734569616
+  tutorialID: tutorial2345
+  tabNames:
+  - Tutorial 2
+  - Tutorial 3
+  - Tutorial 4
+  - Tutorial 5
+  tabTooltips:
+  - Prefabs and Triggers
+  - Scripting and Hierarchy
+  - UI, Scenes, and Persistence
+  - Animations and State Machines
+  basePackages:
+  - {fileID: 102900000, guid: bd6319e92763ab7428ea8593083ef95c, type: 3}
+  - {fileID: 102900000, guid: c4ece07465d8bd54d8ae54a90eb21af0, type: 3}
+  - {fileID: 102900000, guid: d8b1d7ba918baab449d6495103acbedc, type: 3}
+  - {fileID: 102900000, guid: f222516f8a08a5b4e929dfff11fcc07d, type: 3}
+  Sections:
+  - kit109Tutorial: 0
+    Heading:
+      m_Untranslated: Introduction
+    Text:
+      m_Untranslated: Getting started.
+    Metadata: 
+    Url: 
+    Image: {fileID: 2800000, guid: d2cdc4a8211550e43b0175224d138060, type: 3}
+    IndexOfPrereqSection: -1
+    Tutorial: {fileID: 11400000, guid: b62f8f7581f0cca42932fe5763cd8438, type: 2}
+  - kit109Tutorial: 0
+    Heading:
+      m_Untranslated: Unity Status Bar and Errors
+    Text:
+      m_Untranslated: Create a (broken) spaceship, then fix it!
+    Metadata: 
+    Url: 
+    Image: {fileID: 2800000, guid: d2cdc4a8211550e43b0175224d138060, type: 3}
+    IndexOfPrereqSection: 0
+    Tutorial: {fileID: 11400000, guid: 30d052a8b0934f24ba6c64c3425ba5b6, type: 2}
+  - kit109Tutorial: 0
+    Heading:
+      m_Untranslated: Prefabs
+    Text:
+      m_Untranslated: Create bullets for your spaceship to shoot, using... Prefabs!
+    Metadata: 
+    Url: 
+    Image: {fileID: 2800000, guid: d2cdc4a8211550e43b0175224d138060, type: 3}
+    IndexOfPrereqSection: 1
+    Tutorial: {fileID: 11400000, guid: c06f76f54ec544a4cad75e04fbf2eda8, type: 2}
+  - kit109Tutorial: 0
+    Heading:
+      m_Untranslated: Making Links Between Objects
+    Text:
+      m_Untranslated: Get your spaceship actually shooting bullets around the screen
+        by linking up the Bullet prefab.
+    Metadata: 
+    Url: 
+    Image: {fileID: 2800000, guid: d2cdc4a8211550e43b0175224d138060, type: 3}
+    IndexOfPrereqSection: 2
+    Tutorial: {fileID: 11400000, guid: 333f1032fbd89814c83234c0c47c7ef8, type: 2}
+  - kit109Tutorial: 0
+    Heading:
+      m_Untranslated: Triggers
+    Text:
+      m_Untranslated: Stop your bullets colliding with your own spaceship by using
+        triggers!
+    Metadata: 
+    Url: 
+    Image: {fileID: 2800000, guid: d2cdc4a8211550e43b0175224d138060, type: 3}
+    IndexOfPrereqSection: 3
+    Tutorial: {fileID: 11400000, guid: ca39940c1b2d9a742b3967a484a6b5e6, type: 2}
+  - kit109Tutorial: 0
+    Heading:
+      m_Untranslated: Layers
+    Text:
+      m_Untranslated: Prepare to kill Invaderoids (and turn off self-killing) by
+        changing the bullets layer.
+    Metadata: 
+    Url: 
+    Image: {fileID: 2800000, guid: d2cdc4a8211550e43b0175224d138060, type: 3}
+    IndexOfPrereqSection: 4
+    Tutorial: {fileID: 11400000, guid: 57c62a8b175d8b0439e4bfcfbea46da2, type: 2}
+  - kit109Tutorial: 0
+    Heading:
+      m_Untranslated: Making the Invaderoids Game
+    Text:
+      m_Untranslated: Putting it all together into a simple game (long).
+    Metadata: 
+    Url: 
+    Image: {fileID: 2800000, guid: d2cdc4a8211550e43b0175224d138060, type: 3}
+    IndexOfPrereqSection: 5
+    Tutorial: {fileID: 11400000, guid: 626640c9abc3b06498a728cb42d47f2a, type: 2}
+  - kit109Tutorial: 0
+    Heading:
+      m_Untranslated: Explosions!
+    Text:
+      m_Untranslated: Cool guys don't look at explosions? Well we need explosions
+        in this game so make it happen!
+    Metadata: 
+    Url: 
+    Image: {fileID: 2800000, guid: d2cdc4a8211550e43b0175224d138060, type: 3}
+    IndexOfPrereqSection: 6
+    Tutorial: {fileID: 11400000, guid: c59bd5e32693efd4b8f2be5063f93b1d, type: 2}
+  - kit109Tutorial: 0
+    Heading:
+      m_Untranslated: Exercise
+    Text:
+      m_Untranslated: Complete this to get marked off for this practical
+    Metadata: 
+    Url: 
+    Image: {fileID: 2800000, guid: da615a7ab29fd944d94c2cb73e1b98d3, type: 3}
+    IndexOfPrereqSection: 7
+    Tutorial: {fileID: 11400000, guid: 2fc2cbe9363941844ac41ea83492d525, type: 2}
+  - kit109Tutorial: 0
+    Heading:
+      m_Untranslated: Homework and Resources
+    Text:
+      m_Untranslated: Further reading and useful information.
+    Metadata: 
+    Url: 
+    Image: {fileID: 2800000, guid: b3742cd59b62a25488810a1806c0aec2, type: 3}
+    IndexOfPrereqSection: -1
+    Tutorial: {fileID: 11400000, guid: b883fffce66608e44bb5ab42a91662ea, type: 2}
+  - kit109Tutorial: 0
+    Heading:
+      m_Untranslated: MyLO Quiz 2
+    Text:
+      m_Untranslated: Prefabs and Triggers
+    Metadata: 
+    Url: https://mylo.utas.edu.au/d2l/le/content/770825/viewContent/6400719/View
+    Image: {fileID: 2800000, guid: f1b9caa53ea0e4d44bc3fba0aa501c60, type: 3}
+    IndexOfPrereqSection: -1
+    Tutorial: {fileID: 0}
+  - kit109Tutorial: 1
+    Heading:
+      m_Untranslated: Introduction
+    Text:
+      m_Untranslated: Learn about Scripting, and check your project is ready for
+        this tutorial
+    Metadata: 
+    Url: 
+    Image: {fileID: 2800000, guid: d2cdc4a8211550e43b0175224d138060, type: 3}
+    IndexOfPrereqSection: -1
+    Tutorial: {fileID: 11400000, guid: 3841cf27297905e4a8c906e6ca5d363a, type: 2}
+  - kit109Tutorial: 1
+    Heading:
+      m_Untranslated: Scripting Basics
+    Text:
+      m_Untranslated: Go line-by-line through the PlayerMovement script to learn
+        what a script is made up of.
+    Metadata: 
+    Url: 
+    Image: {fileID: 2800000, guid: d2cdc4a8211550e43b0175224d138060, type: 3}
+    IndexOfPrereqSection: 0
+    Tutorial: {fileID: 11400000, guid: d8495ca36ae3f57468eab8e7563898f5, type: 2}
+  - kit109Tutorial: 1
+    Heading:
+      m_Untranslated: Instantiating GameObjects
+    Text:
+      m_Untranslated: Learn how the PlayerShooting script spawns bullets on command!
+    Metadata: 
+    Url: 
+    Image: {fileID: 2800000, guid: d2cdc4a8211550e43b0175224d138060, type: 3}
+    IndexOfPrereqSection: 1
+    Tutorial: {fileID: 11400000, guid: 2719d020f149851459e8c8f3748c257c, type: 2}
+  - kit109Tutorial: 1
+    Heading:
+      m_Untranslated: My First Script
+    Text:
+      m_Untranslated: Code up a Pickup and make your own script in the process!
+    Metadata: 
+    Url: 
+    Image: {fileID: 2800000, guid: d2cdc4a8211550e43b0175224d138060, type: 3}
+    IndexOfPrereqSection: 2
+    Tutorial: {fileID: 11400000, guid: cc1ff3aa1e789a84d9f0afc1e617f5fc, type: 2}
+  - kit109Tutorial: 1
+    Heading:
+      m_Untranslated: Object Hierarchy
+    Text:
+      m_Untranslated: Give your spaceship a rotating shield, and learn about how
+        objects can be attached to each other!
+    Metadata: 
+    Url: 
+    Image: {fileID: 2800000, guid: d2cdc4a8211550e43b0175224d138060, type: 3}
+    IndexOfPrereqSection: 3
+    Tutorial: {fileID: 11400000, guid: 18d0c427d6164294c9247960e57bf0d0, type: 2}
+  - kit109Tutorial: 1
+    Heading:
+      m_Untranslated: Exercise
+    Text:
+      m_Untranslated: Complete this to get marked off for this tutorial.
+    Metadata: 
+    Url: 
+    Image: {fileID: 2800000, guid: da615a7ab29fd944d94c2cb73e1b98d3, type: 3}
+    IndexOfPrereqSection: 4
+    Tutorial: {fileID: 11400000, guid: 835a694357d8a534a95c35b8b39eef1f, type: 2}
+  - kit109Tutorial: 1
+    Heading:
+      m_Untranslated: Homework and Resources
+    Text:
+      m_Untranslated: To be completed before the next tutorial session.
+    Metadata: 
+    Url: 
+    Image: {fileID: 2800000, guid: b3742cd59b62a25488810a1806c0aec2, type: 3}
+    IndexOfPrereqSection: -1
+    Tutorial: {fileID: 11400000, guid: 1d092449161d59244a6ecd81e7b8863e, type: 2}
+  - kit109Tutorial: 1
+    Heading:
+      m_Untranslated: MyLO Quiz 3
+    Text:
+      m_Untranslated: Scripting and Hierarchy
+    Metadata: 
+    Url: https://mylo.utas.edu.au/d2l/le/content/770825/viewContent/6400720/View
+    Image: {fileID: 2800000, guid: f1b9caa53ea0e4d44bc3fba0aa501c60, type: 3}
+    IndexOfPrereqSection: -1
+    Tutorial: {fileID: 0}
+  - kit109Tutorial: 2
+    Heading:
+      m_Untranslated: Introduction
+    Text:
+      m_Untranslated: Get started and check base files.
+    Metadata: 
+    Url: 
+    Image: {fileID: 2800000, guid: d2cdc4a8211550e43b0175224d138060, type: 3}
+    IndexOfPrereqSection: -1
+    Tutorial: {fileID: 11400000, guid: 9e32889c202ef8548940024f1405ed03, type: 2}
+  - kit109Tutorial: 2
+    Heading:
+      m_Untranslated: UI Images
+    Text:
+      m_Untranslated: Create your first User Interace - the Title Screen!
+    Metadata: 
+    Url: 
+    Image: {fileID: 2800000, guid: d2cdc4a8211550e43b0175224d138060, type: 3}
+    IndexOfPrereqSection: 0
+    Tutorial: {fileID: 11400000, guid: ebd19b5517e84984fa48c1f0bc73d4b8, type: 2}
+  - kit109Tutorial: 2
+    Heading:
+      m_Untranslated: Buttons and Layout
+    Text:
+      m_Untranslated: Add a list of buttons to the Title Screen using VerticalLayoutGroup.
+    Metadata: 
+    Url: 
+    Image: {fileID: 2800000, guid: d2cdc4a8211550e43b0175224d138060, type: 3}
+    IndexOfPrereqSection: 1
+    Tutorial: {fileID: 11400000, guid: e1cb18721872e334b921725b06f305ba, type: 2}
+  - kit109Tutorial: 2
+    Heading:
+      m_Untranslated: Scenes and Events
+    Text:
+      m_Untranslated: Make your buttons work when you click them and learn how to
+        switch scenes.
+    Metadata: 
+    Url: 
+    Image: {fileID: 2800000, guid: d2cdc4a8211550e43b0175224d138060, type: 3}
+    IndexOfPrereqSection: 2
+    Tutorial: {fileID: 11400000, guid: 3ab9bfe17c2d155408acb4389dc9a121, type: 2}
+  - kit109Tutorial: 2
+    Heading:
+      m_Untranslated: Multi-Scene Editing
+    Text:
+      m_Untranslated: Add scenes for when the game is over.
+    Metadata: 
+    Url: 
+    Image: {fileID: 2800000, guid: d2cdc4a8211550e43b0175224d138060, type: 3}
+    IndexOfPrereqSection: 3
+    Tutorial: {fileID: 11400000, guid: 57d32fb7520c650409047691a162c4ad, type: 2}
+  - kit109Tutorial: 2
+    Heading:
+      m_Untranslated: Saving Data with PlayerPrefs
+    Text:
+      m_Untranslated: Save the Highscores using PlayerPrefs
+    Metadata: 
+    Url: 
+    Image: {fileID: 2800000, guid: d2cdc4a8211550e43b0175224d138060, type: 3}
+    IndexOfPrereqSection: 4
+    Tutorial: {fileID: 11400000, guid: 8168a4566ab9c224f831bff17d19f1ed, type: 2}
+  - kit109Tutorial: 2
+    Heading:
+      m_Untranslated: Exercise
+    Text:
+      m_Untranslated: Complete this to get marked off for this tutorial.
+    Metadata: 
+    Url: 
+    Image: {fileID: 2800000, guid: da615a7ab29fd944d94c2cb73e1b98d3, type: 3}
+    IndexOfPrereqSection: 5
+    Tutorial: {fileID: 11400000, guid: a134402d7ef6c6e499f0b94a9da03cdc, type: 2}
+  - kit109Tutorial: 2
+    Heading:
+      m_Untranslated: Homework and Resources
+    Text:
+      m_Untranslated: To be completed before the next tutorial session.
+    Metadata: 
+    Url: 
+    Image: {fileID: 2800000, guid: b3742cd59b62a25488810a1806c0aec2, type: 3}
+    IndexOfPrereqSection: 5
+    Tutorial: {fileID: 11400000, guid: d5a1877d4b36d3a4e95d6fc763f34fcf, type: 2}
+  - kit109Tutorial: 2
+    Heading:
+      m_Untranslated: MyLO Quiz 4
+    Text:
+      m_Untranslated: UI, Scenes, and Persistence
+    Metadata: 
+    Url: https://mylo.utas.edu.au/d2l/le/content/770825/viewContent/6400721/View
+    Image: {fileID: 2800000, guid: f1b9caa53ea0e4d44bc3fba0aa501c60, type: 3}
+    IndexOfPrereqSection: -1
+    Tutorial: {fileID: 0}
+  - kit109Tutorial: 3
+    Heading:
+      m_Untranslated: Introduction
+    Text:
+      m_Untranslated: Get started and check base files.
+    Metadata: 
+    Url: 
+    Image: {fileID: 2800000, guid: d2cdc4a8211550e43b0175224d138060, type: 3}
+    IndexOfPrereqSection: -1
+    Tutorial: {fileID: 11400000, guid: 8bf2efd6d8f03c8458638e5d04f037c9, type: 2}
+  - kit109Tutorial: 3
+    Heading:
+      m_Untranslated: Importing Spritesheets
+    Text:
+      m_Untranslated: Learn how to work with an explosive spritesheet file in Unity.
+    Metadata: 
+    Url: 
+    Image: {fileID: 2800000, guid: d2cdc4a8211550e43b0175224d138060, type: 3}
+    IndexOfPrereqSection: 0
+    Tutorial: {fileID: 11400000, guid: 554fb001a74075a4b9e1ca06cdd207b3, type: 2}
+  - kit109Tutorial: 3
+    Heading:
+      m_Untranslated: Animating Spritesheets
+    Text:
+      m_Untranslated: Learn how to do spritesheet animation by animating an explosion!
+    Metadata: 
+    Url: 
+    Image: {fileID: 2800000, guid: d2cdc4a8211550e43b0175224d138060, type: 3}
+    IndexOfPrereqSection: 1
+    Tutorial: {fileID: 11400000, guid: fc4e53f6f7f6fdc4799fc60591a69dd5, type: 2}
+  - kit109Tutorial: 3
+    Heading:
+      m_Untranslated: Using the Animation Controller
+    Text:
+      m_Untranslated: Add some logic to the explosion animation using the Animation
+        Controller component.
+    Metadata: 
+    Url: 
+    Image: {fileID: 2800000, guid: d2cdc4a8211550e43b0175224d138060, type: 3}
+    IndexOfPrereqSection: 2
+    Tutorial: {fileID: 11400000, guid: aa1ec9eff203ea649812c8841dcb307c, type: 2}
+  - kit109Tutorial: 3
+    Heading:
+      m_Untranslated: Animation Triggers and Parameters
+    Text:
+      m_Untranslated: Learn how to trigger animations from code, by triggering the
+        explosion animation from code!
+    Metadata: 
+    Url: 
+    Image: {fileID: 2800000, guid: d2cdc4a8211550e43b0175224d138060, type: 3}
+    IndexOfPrereqSection: 3
+    Tutorial: {fileID: 11400000, guid: 08f4b577d692a7146b3a9553fc1cbeaf, type: 2}
+  - kit109Tutorial: 3
+    Heading:
+      m_Untranslated: Animation Events
+    Text:
+      m_Untranslated: 'Learn how to trigger code events at a specific point in an
+        animation. '
+    Metadata: 
+    Url: 
+    Image: {fileID: 2800000, guid: d2cdc4a8211550e43b0175224d138060, type: 3}
+    IndexOfPrereqSection: 4
+    Tutorial: {fileID: 11400000, guid: 6e2030b1520576941ad8b7948980fe95, type: 2}
+  - kit109Tutorial: 3
+    Heading:
+      m_Untranslated: Exercise
+    Text:
+      m_Untranslated: Complete this to get marked off for this tutorial.
+    Metadata: 
+    Url: 
+    Image: {fileID: 2800000, guid: da615a7ab29fd944d94c2cb73e1b98d3, type: 3}
+    IndexOfPrereqSection: -1
+    Tutorial: {fileID: 11400000, guid: 18be8b6c1a21d824ca830dedb63500bd, type: 2}
+  - kit109Tutorial: 3
+    Heading:
+      m_Untranslated: Homework and Resources
+    Text:
+      m_Untranslated: To be completed before the next tutorial session.
+    Metadata: 
+    Url: 
+    Image: {fileID: 2800000, guid: b3742cd59b62a25488810a1806c0aec2, type: 3}
+    IndexOfPrereqSection: -1
+    Tutorial: {fileID: 11400000, guid: d139f2f06bf7b0d4fbdd73f7dd35fdc3, type: 2}
+  - kit109Tutorial: 3
+    Heading:
+      m_Untranslated: MyLO Quiz 5
+    Text:
+      m_Untranslated: Animations and State Machines
+    Metadata: 
+    Url: https://mylo.utas.edu.au/d2l/le/content/770825/viewContent/6400722/View
+    Image: {fileID: 2800000, guid: f1b9caa53ea0e4d44bc3fba0aa501c60, type: 3}
+    IndexOfPrereqSection: -1
+    Tutorial: {fileID: 0}
+  showBasePackages: 1

@@ -1,0 +1,116 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff771ccdf4150419d9ff4d342b069aae, type: 3}
+  m_Name: a2-StartPage2
+  m_EditorClassIdentifier: 
+  m_Paragraphs:
+    m_Items:
+    - m_Type: 6
+      Title:
+        m_Untranslated: 
+      Text:
+        m_Untranslated: 
+      m_PollItems: []
+      m_PollCorrectItemIndexes: 00000000
+      m_Tutorial: {fileID: 0}
+      m_Image: {fileID: 0}
+      m_Video: {fileID: 0}
+      m_CriteriaCompletion: 0
+      m_Criteria:
+        m_Items: []
+      m_PossibleErrors: []
+      m_MaskingSettings:
+        m_MaskingEnabled: 0
+        m_UnmaskedViews: []
+      m_Summary: 
+      m_Description: 
+      m_InstructionBoxTitle: 
+      m_InstructionText: 
+      m_TutorialButtonText: 
+      codeBlockText: 
+    - m_Type: 0
+      Title:
+        m_Untranslated: Resources
+      Text:
+        m_Untranslated: "These tutorials are written under the assumption that you\u2019ve
+          either had some exposure to programming before or are currently learning
+          to program in another unit this semester, but there will be some guidance.\r\nThe
+          tutorials will use the C# programming language (although we\u2019ll avoid
+          many of its more powerful/complicated features) and it may be useful either
+          now or later to look at some of the following resources that aim to draw
+          comparisons between other languages that you may have used previously that
+          are similar to C#.\r\nGeneral C# Tutorials\r\n\u2022 C# Program Structure:
+          <a>http://www.tutorialspoint.com/csharp/csharp_program_structure.htm</a>\r\n\u2022
+          C# Basic Syntax: <a>http://www.tutorialspoint.com/csharp/csharp_basic_syntax.htm</a>\r\n\u2022
+          C# Tutorials: <a>https://msdn.microsoft.com/en-us/library/aa288436(v=vs.71).aspx</a>\r\nFor
+          those with a Java Background\r\n\u2022 Java and C# Comparison: <a>https://www.slideshare.net/Pednekar19/difference-between-java-and-c</a>
+          . Lots of small code snippets. \r\n\u2022 A Comparison of Microsoft\u2019s
+          C# Programming Language to Sun Microsystems\u2019 Java Programming Language:
+          <a>http://www.25hoursaday.com/CsharpVsJava.html</a> . More technical than
+          the above, but also more comprehensive.\r\n\u2022 The C# Programming Language
+          for Java Developers: <a>https://msdn.microsoft.com/en-us/library/ms228602.aspx</a>
+          .\r\nFor those with a C/C++ Background\r\n\u2022 C# for C++ Developers:
+          <a>https://msdn.microsoft.com/en-us/library/yyaad03b(v=vs.90).aspx</a>\r\n"
+      m_PollItems: []
+      m_PollCorrectItemIndexes: 00000000
+      m_Tutorial: {fileID: 0}
+      m_Image: {fileID: 0}
+      m_Video: {fileID: 0}
+      m_CriteriaCompletion: 0
+      m_Criteria:
+        m_Items: []
+      m_PossibleErrors: []
+      m_MaskingSettings:
+        m_MaskingEnabled: 0
+        m_UnmaskedViews: []
+      m_Summary: 
+      m_Description: 
+      m_InstructionBoxTitle: 
+      m_InstructionText: 
+      m_TutorialButtonText: 
+      codeBlockText: 
+  m_CameraSettings:
+    m_CameraMode: 0
+    m_FocusMode: 0
+    m_Orthographic: 0
+    m_Size: 0
+    m_Pivot: {x: 0, y: 0, z: 0}
+    m_Rotation: {x: 0, y: 0, z: 0, w: 0}
+    m_FrameObject:
+      m_SceneGuid: 
+      m_GameObjectGuid: 
+      m_SerializedComponentType:
+        m_TypeName: 
+      m_ComponentIndex: 0
+      m_AssetObject: {fileID: 0}
+      m_Prefab: {fileID: 0}
+    m_Enabled: 0
+  NextButton:
+    m_Untranslated: Next
+  DoneButton:
+    m_Untranslated: Done
+  m_NextButton: Next
+  m_DoneButton: Done
+  m_CompletedSound: {fileID: 0}
+  m_autoAdvance: 0
+  m_OnBeforePageShown:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnAfterPageShown:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnBeforeTutorialQuit:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnTutorialPageStay:
+    m_PersistentCalls:
+      m_Calls: []

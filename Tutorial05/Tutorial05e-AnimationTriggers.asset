@@ -1,0 +1,49 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f107dc6d4c984c45bdafd3bb15f98f0, type: 3}
+  m_Name: Tutorial05e-AnimationTriggers
+  m_EditorClassIdentifier: 
+  TutorialTitle:
+    m_Untranslated: Tutorial 5e - Animation Controllers in Code
+  m_TutorialTitle: 
+  m_LessonId: 505
+  m_Version: 1
+  m_Scene: {fileID: 102900000, guid: a52f860b690942944850cf3c794931c8, type: 3}
+  m_OrOpenSceneName: 
+  m_DefaultSceneCameraSettings:
+    m_CameraMode: 0
+    m_FocusMode: 0
+    m_Orthographic: 0
+    m_Size: 0
+    m_Pivot: {x: 0, y: 0, z: 0}
+    m_Rotation: {x: 0, y: 0, z: 0, w: 0}
+    m_FrameObject:
+      m_SceneGuid: 
+      m_GameObjectGuid: 
+      m_SerializedComponentType:
+        m_TypeName: 
+      m_ComponentIndex: 0
+      m_AssetObject: {fileID: 0}
+      m_Prefab: {fileID: 0}
+    m_Enabled: 0
+  m_SkipTutorialBehavior: 0
+  m_WindowLayout: {fileID: 0}
+  m_Pages:
+    m_Items:
+    - {fileID: 11400000, guid: eaf205a0618d32c408fd3fc0bab76378, type: 2}
+    - {fileID: 11400000, guid: f25faa2d0c83e0c43929ec203e5012f5, type: 2}
+    - {fileID: 11400000, guid: 34c7db1836500c44aa0dd32210fb9475, type: 2}
+    - {fileID: 11400000, guid: 3aa1c7a4100c6fe4a9c20d72a3095f2f, type: 2}
+    - {fileID: 11400000, guid: cf5ef9ac0d30e5f4cbd9415e621cc826, type: 2}
+    - {fileID: 11400000, guid: 56b3eff10abf0774dbf24335f559401b, type: 2}
+    - {fileID: 11400000, guid: ef2516b40b1b62f4aa434c66b77bf95a, type: 2}
+    - {fileID: 11400000, guid: 3d58fe82b1e206547b83ae950eafa67e, type: 2}

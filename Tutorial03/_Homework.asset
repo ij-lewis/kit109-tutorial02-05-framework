@@ -1,0 +1,123 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff771ccdf4150419d9ff4d342b069aae, type: 3}
+  m_Name: _Homework
+  m_EditorClassIdentifier: 
+  m_Paragraphs:
+    m_Items:
+    - m_Type: 6
+      Title:
+        m_Untranslated: 
+      Text:
+        m_Untranslated: 
+      m_PollItems: []
+      m_PollCorrectItemIndexes: 00000000
+      m_Tutorial: {fileID: 0}
+      m_Image: {fileID: 0}
+      m_Video: {fileID: 0}
+      m_CriteriaCompletion: 0
+      m_Criteria:
+        m_Items: []
+      m_PossibleErrors: []
+      m_MaskingSettings:
+        m_MaskingEnabled: 0
+        m_UnmaskedViews: []
+      m_Summary: 
+      m_Description: 
+      m_InstructionBoxTitle: 
+      m_InstructionText: 
+      m_TutorialButtonText: 
+      codeBlockText: 
+    - m_Type: 0
+      Title:
+        m_Untranslated: Homework
+      Text:
+        m_Untranslated: "Before doing the next practical you need to:\r\n\u2022 Note
+          the following videos use a 3D game project as a basis, but the topics covered
+          all work equally fine in 2D.\r\n\u2022 Watch the following Unity tutorial
+          videos to reinforce the basic C# Scripting concepts in this practical:\r\n   
+          - Variables and Functions: <a>https://unity3d.com/learn/tutorials/topics/scripting/variables-and-functions</a>
+          \r\n    - Conventions and Syntax: <a>https://unity3d.com/learn/tutorials/topics/scripting/conventions-and-syntax</a>\r\n   
+          - IF statements: <a>https://unity3d.com/learn/tutorials/topics/scripting/if-statements</a>
+          \r\n    - Data Types: <a>https://unity3d.com/learn/tutorials/topics/scripting/data-types</a>
+          \r\n    - Classes: <a>https://unity3d.com/learn/tutorials/topics/scripting/classes</a>\r\n\u2022
+          Watch the following Unity tutorial videos to reinforce the basic Unity-specific
+          Scripting concepts used in the scripts in this practical:\r\n    - GetButton
+          and GetKey: <a>https://unity3d.com/learn/tutorials/topics/scripting/getbutton-and-getkey</a>\r\n   
+          - Update and FixedUpdate: <a>https://unity3d.com/learn/tutorials/topics/scripting/update-and-fixedupdate</a>\r\n   
+          - Translate and Rotate: <a>https://unity3d.com/learn/tutorials/topics/scripting/translate-and-rotate</a>\r\n   
+          - GetComponent: <a>https://unity3d.com/learn/tutorials/topics/scripting/getcomponent</a>\r\n   
+          - Instantiate: <a>https://unity3d.com/learn/tutorials/topics/scripting/instantiate</a>\r\n   
+          - Destroy: <a>https://unity3d.com/learn/tutorials/topics/scripting/destroy</a>\r\n\u2022
+          Watch the following Unity tutorial videos to reinforce the Unity concepts
+          in this practical:\r\n    - Vector Maths: <a>https://unity3d.com/learn/tutorials/topics/scripting/vector-maths</a>\r\n   
+          - Hierarchy and Parent-Child Relationships: <a>https://unity3d.com/learn/tutorials/topics/interface-essentials/hierarchy-and-parent-child-relationships</a>\r\n\u2022
+          Complete the Practical 03 Quiz on MyLO.\r\n\u2022 (Optional) If you think
+          you still need some more help on getting started with Unity Scripting in
+          C#:\r\n    - Coding in Unity for the Absolute Beginner (1 hour): <a>https://unity3d.com/learn/tutorials/topics/scripting/coding-unity-absolute-beginner</a>\r\n   
+          - Scripting Primer and QandA (3 hours):\r\n        - <a>https://unity3d.com/learn/tutorials/topics/scripting/scripting-primer-and-qa</a>\r\n       
+          - <a>https://unity3d.com/learn/tutorials/topics/scripting/scripting-primer-and-qa-continued</a>\r\n       
+          - <a>https://unity3d.com/learn/tutorials/topics/scripting/scripting-primer-and-qa-continued-again</a>\r"
+      m_PollItems: []
+      m_PollCorrectItemIndexes: 00000000
+      m_Tutorial: {fileID: 0}
+      m_Image: {fileID: 0}
+      m_Video: {fileID: 0}
+      m_CriteriaCompletion: 0
+      m_Criteria:
+        m_Items: []
+      m_PossibleErrors: []
+      m_MaskingSettings:
+        m_MaskingEnabled: 0
+        m_UnmaskedViews: []
+      m_Summary: 
+      m_Description: 
+      m_InstructionBoxTitle: 
+      m_InstructionText: 
+      m_TutorialButtonText: 
+      codeBlockText: 
+  m_CameraSettings:
+    m_CameraMode: 0
+    m_FocusMode: 0
+    m_Orthographic: 0
+    m_Size: 0
+    m_Pivot: {x: 0, y: 0, z: 0}
+    m_Rotation: {x: 0, y: 0, z: 0, w: 0}
+    m_FrameObject:
+      m_SceneGuid: 
+      m_GameObjectGuid: 
+      m_SerializedComponentType:
+        m_TypeName: 
+      m_ComponentIndex: 0
+      m_AssetObject: {fileID: 0}
+      m_Prefab: {fileID: 0}
+    m_Enabled: 0
+  NextButton:
+    m_Untranslated: Next
+  DoneButton:
+    m_Untranslated: Done
+  m_NextButton: Next
+  m_DoneButton: Done
+  m_CompletedSound: {fileID: 0}
+  m_autoAdvance: 0
+  m_OnBeforePageShown:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnAfterPageShown:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnBeforeTutorialQuit:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnTutorialPageStay:
+    m_PersistentCalls:
+      m_Calls: []

@@ -1,0 +1,146 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff771ccdf4150419d9ff4d342b069aae, type: 3}
+  m_Name: d4-OnTriggerEnter2D
+  m_EditorClassIdentifier: 
+  m_Paragraphs:
+    m_Items:
+    - m_Type: 6
+      Title:
+        m_Untranslated: 
+      Text:
+        m_Untranslated: 
+      m_PollItems: []
+      m_PollCorrectItemIndexes: 00000000
+      m_Tutorial: {fileID: 0}
+      m_Image: {fileID: 0}
+      m_Video: {fileID: 0}
+      m_CriteriaCompletion: 0
+      m_Criteria:
+        m_Items: []
+      m_PossibleErrors: []
+      m_MaskingSettings:
+        m_MaskingEnabled: 0
+        m_UnmaskedViews: []
+      m_Summary: 
+      m_Description: 
+      m_InstructionBoxTitle: 
+      m_InstructionText: 
+      m_TutorialButtonText: 
+      codeBlockText: 
+    - m_Type: 0
+      Title:
+        m_Untranslated: OnTriggerEnter2D
+      Text:
+        m_Untranslated: "The OnTriggerEnter2D method will be called whenever the
+          Game Object collides with another Game Object (or technically their colliders
+          collide/overlap). It has a single parameter of type Collider2D, which is
+          the Collider2D Component of the Game Object it has collided with.\r\nInside
+          your <asset>MoveToRandomPositionOnCollision</asset> class definition, you
+          can add the following code to implement this function (you can avoid some
+          typing by using Ctrl+Shift+Q here \u2013 although it will call the variable
+          collision rather than other):\r\n<code>\nvoid OnTriggerEnter2D(Collider2D
+          other)\r\n{\r\n   \r\n}\r\n</code>\r\nThis function will be called whenever
+          another collider overlaps with this trigger. Unfortunately, this includes
+          not only the player, but enemies, and bullets as well. For this game we
+          only want the pick up to function when the player collides with it. This
+          is where the parameter to OnTriggerEnter2D comes in. We can access information
+          about the object that collided with us, and decide what to do with that
+          information. \nIn this case, we can <b>change</b> our OnTriggerEnter2D
+          code to check to see that the other object was indeed the player:\n<code>\r\nvoid
+          OnTriggerEnter2D(Collider2D other)\r\n{\r\n\tif (other.CompareTag(\"Player\"))\r\n\t{\r\n\t\t//code
+          here will happen only for the Player\n\t}\n}\n</code>\r\nThis if-statement
+          uses the <a href=\"https://docs.unity3d.com/ScriptReference/Component.CompareTag.html\">CompareTag</a>
+          function to check the tag of the other object. The parameter to this function
+          is the tag to check for, and the result is true if the tag matches that
+          of the parameter. \nNOTE: at the moment this comment \"code here will happen
+          only for the Player\" suggests this will be true immediately -- this isn't
+          true, we haven't set up the Player game object to <i>have</i> this tag
+          yet (and it's got nothing to do with the <i>name</i> of the game object
+          being \"Player\"). Setting this tag up corectly is the next step."
+      m_PollItems: []
+      m_PollCorrectItemIndexes: 00000000
+      m_Tutorial: {fileID: 0}
+      m_Image: {fileID: 0}
+      m_Video: {fileID: 0}
+      m_CriteriaCompletion: 0
+      m_Criteria:
+        m_Items: []
+      m_PossibleErrors: []
+      m_MaskingSettings:
+        m_MaskingEnabled: 0
+        m_UnmaskedViews: []
+      m_Summary: 
+      m_Description: 
+      m_InstructionBoxTitle: 
+      m_InstructionText: 
+      m_TutorialButtonText: 
+      codeBlockText: 
+    - m_Type: 1
+      Title:
+        m_Untranslated: Check Your Code and Save the File
+      Text:
+        m_Untranslated: Check your code matches the instructions above before continuing.
+      m_PollItems: []
+      m_PollCorrectItemIndexes: 00000000
+      m_Tutorial: {fileID: 0}
+      m_Image: {fileID: 0}
+      m_Video: {fileID: 0}
+      m_CriteriaCompletion: 2
+      m_Criteria:
+        m_Items: []
+      m_PossibleErrors: []
+      m_MaskingSettings:
+        m_MaskingEnabled: 0
+        m_UnmaskedViews: []
+      m_Summary: 
+      m_Description: 
+      m_InstructionBoxTitle: 
+      m_InstructionText: 
+      m_TutorialButtonText: 
+      codeBlockText: 
+  m_CameraSettings:
+    m_CameraMode: 0
+    m_FocusMode: 0
+    m_Orthographic: 0
+    m_Size: 0
+    m_Pivot: {x: 0, y: 0, z: 0}
+    m_Rotation: {x: 0, y: 0, z: 0, w: 0}
+    m_FrameObject:
+      m_SceneGuid: 
+      m_GameObjectGuid: 
+      m_SerializedComponentType:
+        m_TypeName: 
+      m_ComponentIndex: 0
+      m_AssetObject: {fileID: 0}
+      m_Prefab: {fileID: 0}
+    m_Enabled: 0
+  NextButton:
+    m_Untranslated: Next
+  DoneButton:
+    m_Untranslated: Done
+  m_NextButton: Next
+  m_DoneButton: Done
+  m_CompletedSound: {fileID: 0}
+  m_autoAdvance: 0
+  m_OnBeforePageShown:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnAfterPageShown:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnBeforeTutorialQuit:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnTutorialPageStay:
+    m_PersistentCalls:
+      m_Calls: []

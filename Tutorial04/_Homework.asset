@@ -1,0 +1,114 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff771ccdf4150419d9ff4d342b069aae, type: 3}
+  m_Name: _Homework
+  m_EditorClassIdentifier: 
+  m_Paragraphs:
+    m_Items:
+    - m_Type: 6
+      Title:
+        m_Untranslated: 
+      Text:
+        m_Untranslated: 
+      m_PollItems: []
+      m_PollCorrectItemIndexes: 00000000
+      m_Tutorial: {fileID: 0}
+      m_Image: {fileID: 0}
+      m_Video: {fileID: 0}
+      m_CriteriaCompletion: 0
+      m_Criteria:
+        m_Items: []
+      m_PossibleErrors: []
+      m_MaskingSettings:
+        m_MaskingEnabled: 0
+        m_UnmaskedViews: []
+      m_Summary: 
+      m_Description: 
+      m_InstructionBoxTitle: 
+      m_InstructionText: 
+      m_TutorialButtonText: 
+      codeBlockText: 
+    - m_Type: 0
+      Title:
+        m_Untranslated: Homework
+      Text:
+        m_Untranslated: "Before doing the next practical you need to:\r\n\u2022 Watch
+          the following Unity tutorial videos to reinforce the UI concepts in this
+          practical:\r\n\to UI Canvas: <a>https://unity3d.com/learn/tutorials/topics/user-interface-ui/ui-canvas</a>\r\n\to
+          RectTransform: <a>https://unity3d.com/learn/tutorials/modules/beginner/ui/rect-transform</a>\r\n\to
+          UI Button: <a>https://unity3d.com/learn/tutorials/topics/user-interface-ui/ui-button</a>\r\n\to
+          UI Image: <a>https://unity3d.com/learn/tutorials/topics/user-interface-ui/ui-image</a>\r\n\to
+          UI Text: <a>https://unity3d.com/learn/tutorials/topics/user-interface-ui/ui-text</a>\r\n\to
+          UI Events and Event Triggers: <a>https://unity3d.com/learn/tutorials/topics/user-interface-ui/ui-events-and-event-triggers</a>\r\n\to
+          (Optional) You might also get some benefit out of watching the following
+          videos in a making a Tic-Tac-Toe game using only the UI: <a>https://unity3d.com/learn/tutorials/tic-tac-toe/introduction-and-setting-project?playlist=17111</a>\r\n\u2022
+          Read and watch the following Unity tutorial videos to reinforce the Scene
+          concepts in this practical:\r\n\to <a>https://docs.unity3d.com/Manual/MultiSceneEditing.html</a>\r\n\to
+          <a>https://blogs.unity3d.com/2014/08/04/multi-scene-editing/</a>\r\n\to
+          Multi-Scene Editing: <a>https://youtu.be/aw7U068Iqhk</a>\r\n\u2022 Watch
+          the following Unity tutorial videos to reinforce the concept of persistence
+          in this practical:\r\n\to Persistence: <a>https://unity3d.com/learn/tutorials/topics/scripting/persistence-saving-and-loading-data</a>\r\n\u2022
+          Complete the Practical 04 Quiz on MyLO.\r"
+      m_PollItems: []
+      m_PollCorrectItemIndexes: 00000000
+      m_Tutorial: {fileID: 0}
+      m_Image: {fileID: 0}
+      m_Video: {fileID: 0}
+      m_CriteriaCompletion: 0
+      m_Criteria:
+        m_Items: []
+      m_PossibleErrors: []
+      m_MaskingSettings:
+        m_MaskingEnabled: 0
+        m_UnmaskedViews: []
+      m_Summary: 
+      m_Description: 
+      m_InstructionBoxTitle: 
+      m_InstructionText: 
+      m_TutorialButtonText: 
+      codeBlockText: 
+  m_CameraSettings:
+    m_CameraMode: 0
+    m_FocusMode: 0
+    m_Orthographic: 0
+    m_Size: 0
+    m_Pivot: {x: 0, y: 0, z: 0}
+    m_Rotation: {x: 0, y: 0, z: 0, w: 0}
+    m_FrameObject:
+      m_SceneGuid: 
+      m_GameObjectGuid: 
+      m_SerializedComponentType:
+        m_TypeName: 
+      m_ComponentIndex: 0
+      m_AssetObject: {fileID: 0}
+      m_Prefab: {fileID: 0}
+    m_Enabled: 0
+  NextButton:
+    m_Untranslated: Next
+  DoneButton:
+    m_Untranslated: Done
+  m_NextButton: Next
+  m_DoneButton: Done
+  m_CompletedSound: {fileID: 0}
+  m_autoAdvance: 0
+  m_OnBeforePageShown:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnAfterPageShown:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnBeforeTutorialQuit:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnTutorialPageStay:
+    m_PersistentCalls:
+      m_Calls: []
