@@ -27,7 +27,7 @@ public class Tutorial05Callbacks : ScriptableObject
         var importer = AssetImporter.GetAtPath(path) as TextureImporter;
         if (importer == null)
         {
-             Criterion.globalLastKnownError = $"Could not find 'ExplosionSpritesheet.png' at '{path}'.";
+             Criterion.globalLastKnownError = $"Could not find <asset>ExplosionSpritesheet.png</asset> at '{path}'.";
              return false;
         }
 
@@ -59,7 +59,7 @@ public class Tutorial05Callbacks : ScriptableObject
     {
         if (AssetDatabase.LoadAssetAtPath<AnimationClip>("Assets/Animations/ExplosionAnimation.anim") == null)
         {
-             Criterion.globalLastKnownError = "Could not find 'ExplosionAnimation.anim' in 'Assets/Animations/'.";
+             Criterion.globalLastKnownError = "Could not find <asset>ExplosionAnimation.anim</asset> in 'Assets/Animations/'.";
              return false;
         }
         return true;
@@ -149,7 +149,7 @@ public class Tutorial05Callbacks : ScriptableObject
     {
         if (CommonTutorialCallbacks.GameObjectWithNameExists("ExplosionSpritesheet_0"))
         {
-             Criterion.globalLastKnownError = "Delete the 'ExplosionSpritesheet_0' GameObject from the Scene.";
+             Criterion.globalLastKnownError = "Delete the <go>ExplosionSpritesheet_0</go> GameObject from the Scene.";
              return false;
         }
         return true;
@@ -158,7 +158,7 @@ public class Tutorial05Callbacks : ScriptableObject
     {
         if (AssetDatabase.LoadAssetAtPath<RuntimeAnimatorController>("Assets/Animations/InvaderoidController.controller") == null)
         {
-             Criterion.globalLastKnownError = "Could not find 'InvaderoidController.controller' in 'Assets/Animations/'.";
+             Criterion.globalLastKnownError = "Could not find <asset>InvaderoidController.controller</asset> in 'Assets/Animations/'.";
              return false;
         }
         return true;
@@ -167,7 +167,7 @@ public class Tutorial05Callbacks : ScriptableObject
     {
         if (CommonTutorialCallbacks.PrefabComponent<Animator>("Invaderoid") == null)
         {
-             Criterion.globalLastKnownError = "The 'Invaderoid' Prefab needs an 'Animator' component.";
+             Criterion.globalLastKnownError = "The <asset>Invaderoid</asset> Prefab needs an 'Animator' component.";
              return false;
         }
         return true;
@@ -175,14 +175,14 @@ public class Tutorial05Callbacks : ScriptableObject
     public bool D2ControllerLink()
     {
         var a = CommonTutorialCallbacks.PrefabComponent<Animator>("Invaderoid");
-        if (a == null) { Criterion.globalLastKnownError = "Invaderoid Prefab missing Animator."; return false; }
+        if (a == null) { Criterion.globalLastKnownError = "<asset>Invaderoid</asset> Prefab missing Animator."; return false; }
 
         var ac = AssetDatabase.LoadAssetAtPath<RuntimeAnimatorController>("Assets/Animations/InvaderoidController.controller"); ;
-        if (ac == null) { Criterion.globalLastKnownError = "InvaderoidController missing."; return false; }
+        if (ac == null) { Criterion.globalLastKnownError = "<asset>InvaderoidController</asset> missing."; return false; }
 
         if (a.runtimeAnimatorController != ac)
         {
-             Criterion.globalLastKnownError = "Assign 'InvaderoidController' to the 'Controller' field of the Invaderoid's Animator.";
+             Criterion.globalLastKnownError = "Assign <asset>InvaderoidController</asset> to the 'Controller' field of the <asset>Invaderoid</asset>'s Animator.";
              return false;
         }
         return true;
@@ -305,7 +305,7 @@ public class Tutorial05Callbacks : ScriptableObject
         if (prefab == null) return false;
         if (prefab.GetComponent("ExplosionOnDestroy") != null)
         {
-             Criterion.globalLastKnownError = "Remove the 'ExplosionOnDestroy' script from the 'Invaderoid' Prefab.";
+             Criterion.globalLastKnownError = "Remove the 'ExplosionOnDestroy' script from the <asset>Invaderoid</asset> Prefab.";
              return false;
         }
         return true;
@@ -317,7 +317,7 @@ public class Tutorial05Callbacks : ScriptableObject
         var send = prefab.GetComponent("SendAnimTriggerOnCollision");
         if (send == null)
         {
-             Criterion.globalLastKnownError = "The 'Invaderoid' Prefab is missing the 'SendAnimTriggerOnCollision' script.";
+             Criterion.globalLastKnownError = "The <asset>Invaderoid</asset> Prefab is missing the 'SendAnimTriggerOnCollision' script.";
              return false;
         }
         
@@ -344,7 +344,7 @@ public class Tutorial05Callbacks : ScriptableObject
         if (prefab == null) return false;
         if (prefab.GetComponent("DestroySelfAndOtherOnCollision") != null)
         {
-             Criterion.globalLastKnownError = "Remove 'DestroySelfAndOtherOnCollision' script from the 'Bullet' Prefab.";
+             Criterion.globalLastKnownError = "Remove 'DestroySelfAndOtherOnCollision' script from the <asset>Bullet</asset> Prefab.";
              return false;
         }
         return true;
@@ -355,7 +355,7 @@ public class Tutorial05Callbacks : ScriptableObject
         if (prefab == null) return false;
         if (prefab.GetComponent("DestroyOnCollision") == null)
         {
-             Criterion.globalLastKnownError = "Add 'DestroyOnCollision' script to the 'Bullet' Prefab.";
+             Criterion.globalLastKnownError = "Add 'DestroyOnCollision' script to the <asset>Bullet</asset> Prefab.";
              return false;
         }
         return true;
@@ -405,7 +405,7 @@ public class Tutorial05Callbacks : ScriptableObject
         if (prefab == null) return false;
         if (prefab.GetComponent("AnimationEventObjectDestroyer") == null)
         {
-             Criterion.globalLastKnownError = "Add the 'AnimationEventObjectDestroyer' script to the 'Invaderoid' Prefab.";
+             Criterion.globalLastKnownError = "Add the 'AnimationEventObjectDestroyer' script to the <asset>Invaderoid</asset> Prefab.";
              return false;
         }
         return true;

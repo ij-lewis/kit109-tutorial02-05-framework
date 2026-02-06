@@ -23,12 +23,12 @@ public class Tutorial02Callbacks : ScriptableObject
         var go = CommonTutorialCallbacks.FindGameObject("Player");
         if (go == null)
         {
-            Criterion.globalLastKnownError = "Could not find a GameObject named 'Player'.";
+            Criterion.globalLastKnownError = "Could not find a GameObject named <go>Player</go>.";
             return false;
         }
         if (go.GetComponent("PlayerMovement") == null)
         {
-            Criterion.globalLastKnownError = "The 'Player' GameObject does not have the 'PlayerMovement' script attached.";
+            Criterion.globalLastKnownError = "The <go>Player</go> GameObject does not have the 'PlayerMovement' script attached.";
             return false;
         }
         return true;
@@ -38,18 +38,18 @@ public class Tutorial02Callbacks : ScriptableObject
         var go = CommonTutorialCallbacks.FindGameObject("Player");
         if (go == null)
         {
-            Criterion.globalLastKnownError = "Could not find a GameObject named 'Player'.";
+            Criterion.globalLastKnownError = "Could not find a GameObject named <go>Player</go>.";
             return false;
         }
         var rb = go.GetComponent<Rigidbody2D>();
         if (rb == null)
         {
-             Criterion.globalLastKnownError = "The 'Player' GameObject does not have a 'Rigidbody2D' component.";
+             Criterion.globalLastKnownError = "The <go>Player</go> GameObject does not have a 'Rigidbody2D' component.";
              return false;
         }
         if (rb.gravityScale != 0)
         {
-            Criterion.globalLastKnownError = $"The Player's Rigidbody2D Gravity Scale should be 0, but it is {rb.gravityScale}.";
+            Criterion.globalLastKnownError = $"The <go>Player</go>'s Rigidbody2D Gravity Scale should be 0, but it is {rb.gravityScale}.";
             return false;
         }
         return true;
@@ -60,18 +60,18 @@ public class Tutorial02Callbacks : ScriptableObject
         var go = CommonTutorialCallbacks.FindGameObject("Player");
         if (go == null)
         {
-            Criterion.globalLastKnownError = "Could not find a GameObject named 'Player'.";
+            Criterion.globalLastKnownError = "Could not find a GameObject named <go>Player</go>.";
             return false;
         }
         var rb = go.GetComponent<Rigidbody2D>();
         if (rb == null)
         {
-             Criterion.globalLastKnownError = "The 'Player' GameObject does not have a 'Rigidbody2D' component.";
+             Criterion.globalLastKnownError = "The <go>Player</go> GameObject does not have a 'Rigidbody2D' component.";
              return false;
         }
         if (rb.linearDamping != 1 && rb.sharedMaterial == null) //checking drag (linearDamping in newer versions)
         {
-            Criterion.globalLastKnownError = $"The Player's Rigidbody2D Linear Drag should be 1, but it is {rb.linearDamping}.";
+            Criterion.globalLastKnownError = $"The <go>Player</go>'s Rigidbody2D Linear Drag should be 1, but it is {rb.linearDamping}.";
             return false;
         }
         return true;
@@ -82,12 +82,12 @@ public class Tutorial02Callbacks : ScriptableObject
         var go = CommonTutorialCallbacks.FindGameObject("Player");
         if (go == null)
         {
-            Criterion.globalLastKnownError = "Could not find a GameObject named 'Player'.";
+            Criterion.globalLastKnownError = "Could not find a GameObject named <go>Player</go>.";
             return false;
         }
         if (go.GetComponent("WrapAround") == null)
         {
-            Criterion.globalLastKnownError = "The 'Player' GameObject does not have the 'WrapAround' script attached.";
+            Criterion.globalLastKnownError = "The <go>Player</go> GameObject does not have the 'WrapAround' script attached.";
             return false;
         }
         return true;
@@ -97,12 +97,12 @@ public class Tutorial02Callbacks : ScriptableObject
         var go = CommonTutorialCallbacks.FindGameObject("Player");
         if (go == null)
         {
-            Criterion.globalLastKnownError = "Could not find a GameObject named 'Player'.";
+            Criterion.globalLastKnownError = "Could not find a GameObject named <go>Player</go>.";
             return false;
         }
         if (go.GetComponent<PolygonCollider2D>() == null)
         {
-            Criterion.globalLastKnownError = "The 'Player' GameObject does not have a 'PolygonCollider2D' component.";
+            Criterion.globalLastKnownError = "The <go>Player</go> GameObject does not have a 'PolygonCollider2D' component.";
             return false;
         }
         return true;
@@ -116,18 +116,18 @@ public class Tutorial02Callbacks : ScriptableObject
         {
             //Try prefab if scene object missing check? No, usually this asks for scene instance.
             //But C1 is "CreateBullet", usually dragging prefab to scene.
-             Criterion.globalLastKnownError = "Could not find a 'Bullet' GameObject in the scene.";
+             Criterion.globalLastKnownError = "Could not find a <go>Bullet</go> GameObject in the scene.";
              return false;
         }
         var rb = go.GetComponent<Rigidbody2D>();
         if (rb == null)
         {
-             Criterion.globalLastKnownError = "The 'Bullet' GameObject does not have a 'Rigidbody2D' component.";
+             Criterion.globalLastKnownError = "The <go>Bullet</go> GameObject does not have a 'Rigidbody2D' component.";
              return false;
         }
         if (rb.gravityScale != 0)
         {
-             Criterion.globalLastKnownError = $"The Bullet's Rigidbody2D Gravity Scale should be 0, not {rb.gravityScale}.";
+             Criterion.globalLastKnownError = $"The <go>Bullet</go>'s Rigidbody2D Gravity Scale should be 0, not {rb.gravityScale}.";
              return false;
         }
         return true;
@@ -137,12 +137,12 @@ public class Tutorial02Callbacks : ScriptableObject
         var go = CommonTutorialCallbacks.FindGameObject("Bullet");
         if (go == null)
         {
-             Criterion.globalLastKnownError = "Could not find a 'Bullet' GameObject in the scene.";
+             Criterion.globalLastKnownError = "Could not find a <go>Bullet</go> GameObject in the scene.";
              return false;
         }
         if (go.GetComponent<PolygonCollider2D>() == null)
         {
-             Criterion.globalLastKnownError = "The 'Bullet' GameObject does not have a 'PolygonCollider2D' component.";
+             Criterion.globalLastKnownError = "The <go>Bullet</go> GameObject does not have a 'PolygonCollider2D' component.";
              return false;
         }
         return true;
@@ -152,12 +152,12 @@ public class Tutorial02Callbacks : ScriptableObject
         var go = CommonTutorialCallbacks.FindGameObject("Bullet");
         if (go == null)
         {
-             Criterion.globalLastKnownError = "Could not find a 'Bullet' GameObject in the scene.";
+             Criterion.globalLastKnownError = "Could not find a <go>Bullet</go> GameObject in the scene.";
              return false;
         }
         if (go.GetComponent("WrapAround") == null) //Handle both direct type and string if type missing
         {
-             Criterion.globalLastKnownError = "The 'Bullet' GameObject does not have the 'WrapAround' script attached.";
+             Criterion.globalLastKnownError = "The <go>Bullet</go> GameObject does not have the 'WrapAround' script attached.";
              return false;
         }
         return true;
@@ -167,12 +167,12 @@ public class Tutorial02Callbacks : ScriptableObject
         var bullets = CommonTutorialCallbacks.GameObjectsStartingWith("Bullet");
         if (bullets.Count <= 1)
         {
-             Criterion.globalLastKnownError = $"There should be multiple 'Bullet' GameObjects in the scene. Found {bullets.Count}.";
+             Criterion.globalLastKnownError = $"There should be multiple <go>Bullet</go> GameObjects in the scene. Found {bullets.Count}.";
              return false;
         }
         if (!CommonTutorialCallbacks.ObjectsInDifferentLocations(bullets))
         {
-             Criterion.globalLastKnownError = "The 'Bullet' GameObjects are in the same location. Move them apart so they can be seen.";
+             Criterion.globalLastKnownError = "The <go>Bullet</go> GameObjects are in the same location. Move them apart so they can be seen.";
              return false;
         }
         return true;
@@ -182,18 +182,18 @@ public class Tutorial02Callbacks : ScriptableObject
         var prefab = CommonTutorialCallbacks.GetPrefab("Bullet");
         if (prefab == null)
         {
-             Criterion.globalLastKnownError = "Could not find the 'Bullet' Prefab in 'Assets/' folder.";
+             Criterion.globalLastKnownError = "Could not find the <asset>Bullet</asset> Prefab in 'Assets/' folder.";
              return false;
         }
         var sr = prefab.GetComponent<SpriteRenderer>();
         if (sr == null)
         {
-             Criterion.globalLastKnownError = "The 'Bullet' Prefab does not have a 'SpriteRenderer' component.";
+             Criterion.globalLastKnownError = "The <asset>Bullet</asset> Prefab does not have a 'SpriteRenderer' component.";
              return false;
         }
         if (sr.color.r != 1f || sr.color.g != 1f || sr.color.b != 0f)
         {
-             Criterion.globalLastKnownError = "The 'Bullet' Prefab SpriteRenderer color is not Yellow (R=1, G=1, B=0).";
+             Criterion.globalLastKnownError = "The <asset>Bullet</asset> Prefab SpriteRenderer color is not Yellow (R=1, G=1, B=0).";
              return false;
         }
         return true;
@@ -220,7 +220,7 @@ public class Tutorial02Callbacks : ScriptableObject
                 if (sr.color.r == 1f && sr.color.g == 0f && sr.color.b == 0f) return true;
             }
         }
-        Criterion.globalLastKnownError = "Could not find any 'Bullet' GameObject in the scene that is Red (R=1, G=0, B=0).";
+        Criterion.globalLastKnownError = "Could not find any <go>Bullet</go> GameObject in the scene that is Red (R=1, G=0, B=0).";
         return false;
     }
 
@@ -236,7 +236,7 @@ public class Tutorial02Callbacks : ScriptableObject
                 if (sr.color.r == 0.5f && sr.color.g == 0.5f && sr.color.b == 0.5f) return true;
             }
         }
-        Criterion.globalLastKnownError = "Could not find any 'Bullet' GameObject in the scene that is Grey (0.5, 0.5, 0.5).";
+        Criterion.globalLastKnownError = "Could not find any <go>Bullet</go> GameObject in the scene that is Grey (0.5, 0.5, 0.5).";
         return false;
     }
 
@@ -250,7 +250,7 @@ public class Tutorial02Callbacks : ScriptableObject
 
         if(sr.color.r == 1f && sr.color.g == 1f && sr.color.b == 1f) return true;
         
-        Criterion.globalLastKnownError = "The 'Bullet' Prefab color should be White (1,1,1).";
+        Criterion.globalLastKnownError = "The <asset>Bullet</asset> Prefab color should be White (1,1,1).";
         return false;
     }
 
@@ -260,7 +260,7 @@ public class Tutorial02Callbacks : ScriptableObject
         var count = CommonTutorialCallbacks.GameObjectsStartingWith("Bullet").Count;
         if (count > 0)
         {
-             Criterion.globalLastKnownError = $"There are still {count} 'Bullet' GameObjects in the scene. Please delete them.";
+             Criterion.globalLastKnownError = $"There are still {count} <go>Bullet</go> GameObjects in the scene. Please delete them.";
              return false;
         }
         return true;
@@ -270,12 +270,12 @@ public class Tutorial02Callbacks : ScriptableObject
         var go = CommonTutorialCallbacks.FindGameObject("Player");
         if (go == null)
         {
-             Criterion.globalLastKnownError = "Could not find a GameObject named 'Player'.";
+             Criterion.globalLastKnownError = "Could not find a GameObject named <go>Player</go>.";
              return false;
         }
         if (go.GetComponent("PlayerShooting") == null)
         {
-             Criterion.globalLastKnownError = "The 'Player' GameObject does not have the 'PlayerShooting' script attached.";
+             Criterion.globalLastKnownError = "The <go>Player</go> GameObject does not have the 'PlayerShooting' script attached.";
              return false;
         }
         return true;
@@ -285,13 +285,13 @@ public class Tutorial02Callbacks : ScriptableObject
         var go = CommonTutorialCallbacks.FindGameObject("Player");
         if (go == null)
         {
-             Criterion.globalLastKnownError = "Could not find a GameObject named 'Player'.";
+             Criterion.globalLastKnownError = "Could not find a GameObject named <go>Player</go>.";
              return false;
         }
         var shootingScript = go.GetComponent("PlayerShooting");
         if (shootingScript == null) 
         {
-             Criterion.globalLastKnownError = "The 'Player' GameObject does not have the 'PlayerShooting' script attached.";
+             Criterion.globalLastKnownError = "The <go>Player</go> GameObject does not have the 'PlayerShooting' script attached.";
              return false;
         }
 
@@ -311,7 +311,7 @@ public class Tutorial02Callbacks : ScriptableObject
         //Ideally check if it's the bullet prefab asset.
         if (bulletPrefabProp.objectReferenceValue.name != "Bullet")
         {
-             Criterion.globalLastKnownError = $"The assigned Prefab is named '{bulletPrefabProp.objectReferenceValue.name}', but it should be 'Bullet'.";
+             Criterion.globalLastKnownError = $"The assigned Prefab is named '{bulletPrefabProp.objectReferenceValue.name}', but it should be <asset>Bullet</asset>.";
              return false;
         }
 
@@ -324,18 +324,18 @@ public class Tutorial02Callbacks : ScriptableObject
         var prefab = CommonTutorialCallbacks.GetPrefab("Bullet");
         if (prefab == null)
         {
-             Criterion.globalLastKnownError = "Could not find the 'Bullet' Prefab in 'Assets/' folder.";
+             Criterion.globalLastKnownError = "Could not find the <asset>Bullet</asset> Prefab in 'Assets/' folder.";
              return false;
         }
         var c = prefab.GetComponent<Collider2D>();
         if (c == null)
         {
-             Criterion.globalLastKnownError = "The 'Bullet' Prefab does not have a Collider2D component.";
+             Criterion.globalLastKnownError = "The <asset>Bullet</asset> Prefab does not have a Collider2D component.";
              return false;
         }
         if (!c.isTrigger)
         {
-             Criterion.globalLastKnownError = "The 'Bullet' Prefab Collider is not set to 'Is Trigger'.";
+             Criterion.globalLastKnownError = "The <asset>Bullet</asset> Prefab Collider is not set to 'Is Trigger'.";
              return false;
         }
         return true;
@@ -347,12 +347,12 @@ public class Tutorial02Callbacks : ScriptableObject
         var prefab = CommonTutorialCallbacks.GetPrefab("Bullet");
         if (prefab == null)
         {
-             Criterion.globalLastKnownError = "Could not find the 'Bullet' Prefab.";
+             Criterion.globalLastKnownError = "Could not find the <asset>Bullet</asset> Prefab.";
              return false;
         }
         if (prefab.GetComponent("DestroyAfterTime") == null)
         {
-             Criterion.globalLastKnownError = "The 'Bullet' Prefab does not have the 'DestroyAfterTime' script attached.";
+             Criterion.globalLastKnownError = "The <asset>Bullet</asset> Prefab does not have the 'DestroyAfterTime' script attached.";
              return false;
         }
         return true;
@@ -362,12 +362,12 @@ public class Tutorial02Callbacks : ScriptableObject
         var prefab = CommonTutorialCallbacks.GetPrefab("Bullet");
         if (prefab == null)
         {
-             Criterion.globalLastKnownError = "Could not find the 'Bullet' Prefab.";
+             Criterion.globalLastKnownError = "Could not find the <asset>Bullet</asset> Prefab.";
              return false;
         }
         if (prefab.GetComponent("DestroySelfAndOtherOnCollision") == null)
         {
-             Criterion.globalLastKnownError = "The 'Bullet' Prefab does not have the 'DestroySelfAndOtherOnCollision' script attached.";
+             Criterion.globalLastKnownError = "The <asset>Bullet</asset> Prefab does not have the 'DestroySelfAndOtherOnCollision' script attached.";
              return false;
         }
         return true;
@@ -376,7 +376,7 @@ public class Tutorial02Callbacks : ScriptableObject
     {
         if (CommonTutorialCallbacks.GetPrefab("Bullet") == null)
         {
-             Criterion.globalLastKnownError = "Could not find the 'Bullet' Prefab.";
+             Criterion.globalLastKnownError = "Could not find the <asset>Bullet</asset> Prefab.";
              return false;
         }
         int layer = LayerMask.NameToLayer("Bullets");
@@ -387,7 +387,7 @@ public class Tutorial02Callbacks : ScriptableObject
         }
         if (!CommonTutorialCallbacks.PrefabOnLayer("Bullet", layer))
         {
-             Criterion.globalLastKnownError = "The 'Bullet' Prefab is not on the 'Bullets' layer.";
+             Criterion.globalLastKnownError = "The <asset>Bullet</asset> Prefab is not on the 'Bullets' layer.";
              return false;
         }
         return true;
@@ -397,7 +397,7 @@ public class Tutorial02Callbacks : ScriptableObject
         var go = CommonTutorialCallbacks.FindGameObject("Player");
         if (go == null)
         {
-             Criterion.globalLastKnownError = "Could not find a GameObject named 'Player'.";
+             Criterion.globalLastKnownError = "Could not find a GameObject named <go>Player</go>.";
              return false;
         }
         int layer = LayerMask.NameToLayer("Player"); //Standard Unity layer? Or tutorial created? 
@@ -412,7 +412,7 @@ public class Tutorial02Callbacks : ScriptableObject
         }
         if (!CommonTutorialCallbacks.GameObjectOnLayer("Player", layer))
         {
-             Criterion.globalLastKnownError = "The 'Player' GameObject is not on the 'Player' layer.";
+             Criterion.globalLastKnownError = "The <go>Player</go> GameObject is not on the 'Player' layer.";
              return false;
         }
         return true;
@@ -463,18 +463,18 @@ public class Tutorial02Callbacks : ScriptableObject
         var go = CommonTutorialCallbacks.FindGameObject("Invaderoid");
         if (go == null)
         {
-             Criterion.globalLastKnownError = "Could not find an 'Invaderoid' GameObject in the scene.";
+             Criterion.globalLastKnownError = "Could not find an <go>Invaderoid</go> GameObject in the scene.";
              return false;
         }
         var rb = go.GetComponent<Rigidbody2D>();
         if (rb == null)
         {
-             Criterion.globalLastKnownError = "The 'Invaderoid' GameObject does not have a 'Rigidbody2D' component.";
+             Criterion.globalLastKnownError = "The <go>Invaderoid</go> GameObject does not have a 'Rigidbody2D' component.";
              return false;
         }
         if (rb.gravityScale != 0)
         {
-             Criterion.globalLastKnownError = $"The Invaderoid's Rigidbody2D Gravity Scale should be 0, not {rb.gravityScale}.";
+             Criterion.globalLastKnownError = $"The <go>Invaderoid</go>'s Rigidbody2D Gravity Scale should be 0, not {rb.gravityScale}.";
              return false;
         }
         return true;
@@ -484,18 +484,18 @@ public class Tutorial02Callbacks : ScriptableObject
         var go = CommonTutorialCallbacks.FindGameObject("Invaderoid");
         if (go == null)
         {
-             Criterion.globalLastKnownError = "Could not find an 'Invaderoid' GameObject in the scene.";
+             Criterion.globalLastKnownError = "Could not find an <go>Invaderoid</go> GameObject in the scene.";
              return false;
         }
         var poly = go.GetComponent<PolygonCollider2D>();
         if (poly == null)
         {
-             Criterion.globalLastKnownError = "The 'Invaderoid' GameObject does not have a 'PolygonCollider2D' component.";
+             Criterion.globalLastKnownError = "The <go>Invaderoid</go> GameObject does not have a 'PolygonCollider2D' component.";
              return false;
         }
         if (!poly.isTrigger)
         {
-             Criterion.globalLastKnownError = "The 'Invaderoid' PolygonCollider2D 'Is Trigger' property must be checked.";
+             Criterion.globalLastKnownError = "The <go>Invaderoid</go> PolygonCollider2D 'Is Trigger' property must be checked.";
              return false;
         }
         return true;
@@ -526,12 +526,12 @@ public class Tutorial02Callbacks : ScriptableObject
         var go = CommonTutorialCallbacks.FindGameObject("Invaderoid");
         if (go == null)
         {
-             Criterion.globalLastKnownError = "Could not find an 'Invaderoid' GameObject in the scene.";
+             Criterion.globalLastKnownError = "Could not find an <go>Invaderoid</go> GameObject in the scene.";
              return false;
         }
         if (go.GetComponent(scriptName) == null)
         {
-             Criterion.globalLastKnownError = $"The 'Invaderoid' GameObject does not have the '{scriptName}' script attached.";
+             Criterion.globalLastKnownError = $"The <go>Invaderoid</go> GameObject does not have the '{scriptName}' script attached.";
              return false;
         }
         return true;
@@ -542,14 +542,14 @@ public class Tutorial02Callbacks : ScriptableObject
         var prefab = CommonTutorialCallbacks.GetPrefab("Invaderoid");
         if (prefab == null) 
         {
-             Criterion.globalLastKnownError = "Could not find the 'Invaderoid' Prefab.";
+             Criterion.globalLastKnownError = "Could not find the <asset>Invaderoid</asset> Prefab.";
              return false;
         }
 
         var makeCopies = prefab.GetComponent("MakeCopiesWhenKilled");
         if (makeCopies == null)
         {
-             Criterion.globalLastKnownError = "The 'Invaderoid' Prefab does not have the 'MakeCopiesWhenKilled' script attached.";
+             Criterion.globalLastKnownError = "The <asset>Invaderoid</asset> Prefab does not have the 'MakeCopiesWhenKilled' script attached.";
              return false;
         }
 
@@ -567,7 +567,7 @@ public class Tutorial02Callbacks : ScriptableObject
         }
         if (prop.objectReferenceValue != prefab)
         {
-             Criterion.globalLastKnownError = "The 'Invaderoid Prefab' field does not reference the 'Invaderoid' prefab itself.";
+             Criterion.globalLastKnownError = "The 'Invaderoid Prefab' field does not reference the <asset>Invaderoid</asset> prefab itself.";
              return false;
         }
         return true;
@@ -594,17 +594,17 @@ public class Tutorial02Callbacks : ScriptableObject
         var go = CommonTutorialCallbacks.FindGameObject("Player");
         if (go == null)
         {
-             Criterion.globalLastKnownError = "Could not find a GameObject named 'Player'.";
+             Criterion.globalLastKnownError = "Could not find a GameObject named <go>Player</go>.";
              return false;
         }
         if (go.GetComponent("PlayerHealth") == null)
         {
-             Criterion.globalLastKnownError = "The 'Player' GameObject does not have the 'PlayerHealth' script attached.";
+             Criterion.globalLastKnownError = "The <go>Player</go> GameObject does not have the 'PlayerHealth' script attached.";
              return false;
         }
         if (go.GetComponent("HurtOnCollision") == null)
         {
-             Criterion.globalLastKnownError = "The 'Player' GameObject does not have the 'HurtOnCollision' script attached.";
+             Criterion.globalLastKnownError = "The <go>Player</go> GameObject does not have the 'HurtOnCollision' script attached.";
              return false;
         }
         return true;
@@ -614,21 +614,21 @@ public class Tutorial02Callbacks : ScriptableObject
         var explosion = CommonTutorialCallbacks.GetPrefab("Explosion");
         if (explosion == null)
         {
-             Criterion.globalLastKnownError = "Could not find the 'Explosion' Prefab.";
+             Criterion.globalLastKnownError = "Could not find the <asset>Explosion</asset> Prefab.";
              return false;
         }
 
         var go = CommonTutorialCallbacks.FindGameObject("Player");
         if (go == null) 
         {
-             Criterion.globalLastKnownError = "Could not find a GameObject named 'Player'.";
+             Criterion.globalLastKnownError = "Could not find a GameObject named <go>Player</go>.";
              return false;
         }
 
         var health = go.GetComponent("PlayerHealth");
         if (health == null)
         {
-             Criterion.globalLastKnownError = "The 'Player' GameObject does not have the 'PlayerHealth' script attached.";
+             Criterion.globalLastKnownError = "The <go>Player</go> GameObject does not have the 'PlayerHealth' script attached.";
              return false;
         }
         var healthSO = new SerializedObject(health);
@@ -640,14 +640,14 @@ public class Tutorial02Callbacks : ScriptableObject
         }
         if (healthProp.objectReferenceValue != explosion) 
         {
-             Criterion.globalLastKnownError = "The 'Explosion Prefab' field on 'PlayerHealth' is not assigned to the 'Explosion' prefab.";
+             Criterion.globalLastKnownError = "The 'Explosion Prefab' field on 'PlayerHealth' is not assigned to the <asset>Explosion</asset> prefab.";
              return false;
         }
 
         var hurt = go.GetComponent("HurtOnCollision");
         if (hurt == null)
         {
-             Criterion.globalLastKnownError = "The 'Player' GameObject does not have the 'HurtOnCollision' script attached.";
+             Criterion.globalLastKnownError = "The <go>Player</go> GameObject does not have the 'HurtOnCollision' script attached.";
              return false;
         }
         var hurtSO = new SerializedObject(hurt);
@@ -659,7 +659,7 @@ public class Tutorial02Callbacks : ScriptableObject
         }
         if (hurtProp.objectReferenceValue != explosion)
         {
-             Criterion.globalLastKnownError = "The 'Explosion Prefab' field on 'HurtOnCollision' is not assigned to the 'Explosion' prefab.";
+             Criterion.globalLastKnownError = "The 'Explosion Prefab' field on 'HurtOnCollision' is not assigned to the <asset>Explosion</asset> prefab.";
              return false;
         }
 
@@ -672,20 +672,20 @@ public class Tutorial02Callbacks : ScriptableObject
         var explosion = CommonTutorialCallbacks.GetPrefab("Explosion");
         if (explosion == null)
         {
-             Criterion.globalLastKnownError = "Could not find the 'Explosion' Prefab.";
+             Criterion.globalLastKnownError = "Could not find the <asset>Explosion</asset> Prefab.";
              return false;
         }
         var invaderoid = CommonTutorialCallbacks.GetPrefab("Invaderoid");
         if (invaderoid == null)
         {
-             Criterion.globalLastKnownError = "Could not find the 'Invaderoid' Prefab.";
+             Criterion.globalLastKnownError = "Could not find the <asset>Invaderoid</asset> Prefab.";
              return false;
         }
 
         var script = invaderoid.GetComponent("ExplosionOnDestroy");
         if (script == null)
         {
-             Criterion.globalLastKnownError = "The 'Invaderoid' Prefab does not have the 'ExplosionOnDestroy' script attached.";
+             Criterion.globalLastKnownError = "The <asset>Invaderoid</asset> Prefab does not have the 'ExplosionOnDestroy' script attached.";
              return false;
         }
 
@@ -699,7 +699,7 @@ public class Tutorial02Callbacks : ScriptableObject
         }
         if (prop.objectReferenceValue != explosion)
         {
-             Criterion.globalLastKnownError = "The 'Explosion Prefab' field on 'ExplosionOnDestroy' is not assigned to the 'Explosion' prefab.";
+             Criterion.globalLastKnownError = "The 'Explosion Prefab' field on 'ExplosionOnDestroy' is not assigned to the <asset>Explosion</asset> prefab.";
              return false;
         }
         return true;
@@ -709,12 +709,12 @@ public class Tutorial02Callbacks : ScriptableObject
         var go = CommonTutorialCallbacks.FindGameObject("Player");
         if (go == null)
         {
-             Criterion.globalLastKnownError = "Could not find a GameObject named 'Player'.";
+             Criterion.globalLastKnownError = "Could not find a GameObject named <go>Player</go>.";
              return false;
         }
         if (go.GetComponent("PlayerHyperspace") == null)
         {
-             Criterion.globalLastKnownError = "The 'Player' GameObject does not have the 'PlayerHyperspace' script attached.";
+             Criterion.globalLastKnownError = "The <go>Player</go> GameObject does not have the 'PlayerHyperspace' script attached.";
              return false;
         }
         return true;

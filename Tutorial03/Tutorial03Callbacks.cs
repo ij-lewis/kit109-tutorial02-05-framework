@@ -23,13 +23,13 @@ public class Tutorial03Callbacks : ScriptableObject
         var go = CommonTutorialCallbacks.FindGameObject("Player");
         if (go == null)
         {
-             Criterion.globalLastKnownError = "Could not find a GameObject named 'Player'.";
+             Criterion.globalLastKnownError = "Could not find a GameObject named <go>Player</go>.";
              return false;
         }
         var movement = go.GetComponent("PlayerMovement");
         if (movement == null)
         {
-             Criterion.globalLastKnownError = "The 'Player' GameObject does not have the 'PlayerMovement' script attached.";
+             Criterion.globalLastKnownError = "The <go>Player</go> GameObject does not have the 'PlayerMovement' script attached.";
              return false;
         }
 
@@ -54,18 +54,18 @@ public class Tutorial03Callbacks : ScriptableObject
         var go = CommonTutorialCallbacks.FindGameObject("Pickup");
         if (go == null)
         {
-             Criterion.globalLastKnownError = "Could not find a GameObject named 'Pickup'.";
+             Criterion.globalLastKnownError = "Could not find a GameObject named <go>Pickup</go>.";
              return false;
         }
         var col = go.GetComponent<CircleCollider2D>();
         if (col == null)
         {
-             Criterion.globalLastKnownError = "The 'Pickup' GameObject does not have a 'CircleCollider2D' component.";
+             Criterion.globalLastKnownError = "The <go>Pickup</go> GameObject does not have a 'CircleCollider2D' component.";
              return false;
         }
         if (!col.isTrigger)
         {
-             Criterion.globalLastKnownError = "The 'Pickup' CircleCollider2D 'Is Trigger' property must be checked.";
+             Criterion.globalLastKnownError = "The <go>Pickup</go> CircleCollider2D 'Is Trigger' property must be checked.";
              return false;
         }
         return true;
@@ -75,12 +75,12 @@ public class Tutorial03Callbacks : ScriptableObject
         var go = CommonTutorialCallbacks.FindGameObject("Pickup");
         if (go == null)
         {
-             Criterion.globalLastKnownError = "Could not find a GameObject named 'Pickup'.";
+             Criterion.globalLastKnownError = "Could not find a GameObject named <go>Pickup</go>.";
              return false;
         }
         if (go.GetComponent("StartAtRandomPosition") == null)
         {
-             Criterion.globalLastKnownError = "The 'Pickup' GameObject does not have the 'StartAtRandomPosition' script attached.";
+             Criterion.globalLastKnownError = "The <go>Pickup</go> GameObject does not have the 'StartAtRandomPosition' script attached.";
              return false;
         }
         return true;
@@ -90,18 +90,18 @@ public class Tutorial03Callbacks : ScriptableObject
         var go = CommonTutorialCallbacks.FindGameObject("Pickup");
         if (go == null)
         {
-             Criterion.globalLastKnownError = "Could not find a GameObject named 'Pickup'.";
+             Criterion.globalLastKnownError = "Could not find a GameObject named <go>Pickup</go>.";
              return false;
         }
         var sr = go.GetComponent<SpriteRenderer>();
         if (sr == null)
         {
-             Criterion.globalLastKnownError = "The 'Pickup' GameObject does not have a 'SpriteRenderer' component.";
+             Criterion.globalLastKnownError = "The <go>Pickup</go> GameObject does not have a 'SpriteRenderer' component.";
              return false;
         }
         if (sr.color.r == 1f && sr.color.g == 1f && sr.color.b == 1f)
         {
-             Criterion.globalLastKnownError = "The 'Pickup' color is still White. Please change it to something else.";
+             Criterion.globalLastKnownError = "The <go>Pickup</go> color is still White. Please change it to something else.";
              return false;
         }
         return true;
@@ -111,12 +111,12 @@ public class Tutorial03Callbacks : ScriptableObject
         var go = CommonTutorialCallbacks.FindGameObject("Pickup");
         if (go == null)
         {
-             Criterion.globalLastKnownError = "Could not find a GameObject named 'Pickup'.";
+             Criterion.globalLastKnownError = "Could not find a GameObject named <go>Pickup</go>.";
              return false;
         }
         if (go.GetComponent("MoveToRandomPositionOnCollision") == null)
         {
-             Criterion.globalLastKnownError = "The 'Pickup' GameObject does not have the 'MoveToRandomPositionOnCollision' script attached.";
+             Criterion.globalLastKnownError = "The <go>Pickup</go> GameObject does not have the 'MoveToRandomPositionOnCollision' script attached.";
              return false;
         }
         return true;
@@ -126,12 +126,12 @@ public class Tutorial03Callbacks : ScriptableObject
         var go = CommonTutorialCallbacks.FindGameObject("Player");
         if (go == null)
         {
-             Criterion.globalLastKnownError = "Could not find a GameObject named 'Player'.";
+             Criterion.globalLastKnownError = "Could not find a GameObject named <go>Player</go>.";
              return false;
         }
         if (!go.CompareTag("Player"))
         {
-             Criterion.globalLastKnownError = $"The 'Player' GameObject Tag is set to '{go.tag}', but it should be 'Player'.";
+             Criterion.globalLastKnownError = $"The <go>Player</go> GameObject Tag is set to '{go.tag}', but it should be 'Player'.";
              return false;
         }
         return true;
@@ -143,20 +143,20 @@ public class Tutorial03Callbacks : ScriptableObject
         var player = CommonTutorialCallbacks.FindGameObject("Player");
         if (player == null)
         {
-             Criterion.globalLastKnownError = "Could not find a GameObject named 'Player'.";
+             Criterion.globalLastKnownError = "Could not find a GameObject named <go>Player</go>.";
              return false;
         }
         var shield = CommonTutorialCallbacks.FindGameObject("Shield");
         if (shield == null)
         {
-             Criterion.globalLastKnownError = "Could not find a GameObject named 'Shield'.";
+             Criterion.globalLastKnownError = "Could not find a GameObject named <go>Shield</go>.";
              return false;
         }
 
         float dist = (player.transform.position - shield.transform.position).magnitude;
         if (dist >= 3f)
         {
-             Criterion.globalLastKnownError = $"The 'Shield' is too far from the 'Player' ({dist:F2} units). Move it closer.";
+             Criterion.globalLastKnownError = $"The <go>Shield</go> is too far from the <go>Player</go> ({dist:F2} units). Move it closer.";
              return false;
         }
         return true;
@@ -164,13 +164,13 @@ public class Tutorial03Callbacks : ScriptableObject
     public bool E3ShieldIsChild()
     {
         var player = CommonTutorialCallbacks.FindGameObject("Player");
-        if (player == null) { Criterion.globalLastKnownError = "Player missing."; return false; }
+        if (player == null) { Criterion.globalLastKnownError = "Could not find <go>Player</go>."; return false; }
         var shield = CommonTutorialCallbacks.FindGameObject("Shield");
-        if (shield == null) { Criterion.globalLastKnownError = "Shield missing."; return false; }
+        if (shield == null) { Criterion.globalLastKnownError = "Could not find <go>Shield</go>."; return false; }
 
         if (shield.transform.parent != player.transform)
         {
-             Criterion.globalLastKnownError = "The 'Shield' GameObject should be a child of 'Player' in the Hierarchy.";
+             Criterion.globalLastKnownError = "The <go>Shield</go> GameObject should be a child of <go>Player</go> in the Hierarchy.";
              return false;
         }
         return true;
@@ -178,11 +178,11 @@ public class Tutorial03Callbacks : ScriptableObject
     public bool E3ShieldX0()
     {
         var shield = CommonTutorialCallbacks.FindGameObject("Shield");
-        if (shield == null) { Criterion.globalLastKnownError = "Shield missing."; return false; }
+        if (shield == null) { Criterion.globalLastKnownError = "Could not find <go>Shield</go>."; return false; }
 
         if (!Mathf.Approximately(shield.transform.localPosition.x, 0f))
         {
-             Criterion.globalLastKnownError = $"The 'Shield' local X position should be 0, currently {shield.transform.localPosition.x}.";
+             Criterion.globalLastKnownError = $"The <go>Shield</go> local X position should be 0, currently {shield.transform.localPosition.x}.";
              return false;
         }
         return true;
@@ -190,16 +190,16 @@ public class Tutorial03Callbacks : ScriptableObject
     public bool E4ShieldHasPolygon()
     {
         var go = CommonTutorialCallbacks.FindGameObject("Shield");
-        if (go == null) { Criterion.globalLastKnownError = "Shield missing."; return false; }
+        if (go == null) { Criterion.globalLastKnownError = "Could not find <go>Shield</go>."; return false; }
         var col = go.GetComponent<PolygonCollider2D>();
         if (col == null)
         {
-             Criterion.globalLastKnownError = "The 'Shield' does not have a PolygonCollider2D.";
+             Criterion.globalLastKnownError = "The <go>Shield</go> does not have a PolygonCollider2D.";
              return false;
         }
         if (!col.isTrigger)
         {
-             Criterion.globalLastKnownError = "The 'Shield' PolygonCollider2D must be a Trigger.";
+             Criterion.globalLastKnownError = "The <go>Shield</go> PolygonCollider2D must be a Trigger.";
              return false;
         }
         return true;
@@ -207,10 +207,10 @@ public class Tutorial03Callbacks : ScriptableObject
     public bool E4ShieldHasDestroyEnemies()
     {
         var go = CommonTutorialCallbacks.FindGameObject("Shield");
-        if (go == null) { Criterion.globalLastKnownError = "Shield missing."; return false; }
+        if (go == null) { Criterion.globalLastKnownError = "Could not find <go>Shield</go>."; return false; }
         if (go.GetComponent("ShieldDestroyEnemies") == null)
         {
-             Criterion.globalLastKnownError = "The 'Shield' does not have 'ShieldDestroyEnemies' script.";
+             Criterion.globalLastKnownError = "The <go>Shield</go> does not have 'ShieldDestroyEnemies' script.";
              return false;
         }
         return true;
@@ -218,10 +218,10 @@ public class Tutorial03Callbacks : ScriptableObject
     public bool E4ShieldHasRotate()
     {
         var go = CommonTutorialCallbacks.FindGameObject("Shield");
-        if (go == null) { Criterion.globalLastKnownError = "Shield missing."; return false; }
+        if (go == null) { Criterion.globalLastKnownError = "Could not find <go>Shield</go>."; return false; }
         if (go.GetComponent("Rotate") == null)
         {
-             Criterion.globalLastKnownError = "The 'Shield' does not have 'Rotate' script.";
+             Criterion.globalLastKnownError = "The <go>Shield</go> does not have 'Rotate' script.";
              return false;
         }
         return true;
@@ -229,12 +229,12 @@ public class Tutorial03Callbacks : ScriptableObject
     public bool E3ShieldPlayerLayer()
     {
         var shield = CommonTutorialCallbacks.FindGameObject("Shield");
-        if (shield == null) { Criterion.globalLastKnownError = "Shield missing."; return false; }
+        if (shield == null) { Criterion.globalLastKnownError = "Could not find <go>Shield</go>."; return false; }
         //Assuming Player layer exists if we reach here usually
         int playerLayer = LayerMask.NameToLayer("Player");
         if (shield.layer != playerLayer)
         {
-             Criterion.globalLastKnownError = "The 'Shield' is not on the 'Player' layer.";
+             Criterion.globalLastKnownError = "The <go>Shield</go> is not on the 'Player' layer.";
              return false;
         }
         return true;
@@ -242,10 +242,10 @@ public class Tutorial03Callbacks : ScriptableObject
     public bool E6ShieldHasNoRotate()
     {
         var go = CommonTutorialCallbacks.FindGameObject("Shield");
-        if (go == null) { Criterion.globalLastKnownError = "Shield missing."; return false; }
+        if (go == null) { Criterion.globalLastKnownError = "Could not find <go>Shield</go>."; return false; }
         if (go.GetComponent("Rotate") != null)
         {
-             Criterion.globalLastKnownError = "The 'Shield' still has the 'Rotate' script. Please remove it.";
+             Criterion.globalLastKnownError = "The <go>Shield</go> still has the 'Rotate' script. Please remove it.";
              return false;
         }
         return true;
@@ -253,11 +253,11 @@ public class Tutorial03Callbacks : ScriptableObject
     public bool E7PivotIs000()
     {
         var shield = CommonTutorialCallbacks.FindGameObject("Shield Pivot");
-        if (shield == null) { Criterion.globalLastKnownError = "Could not find 'Shield Pivot'."; return false; }
+        if (shield == null) { Criterion.globalLastKnownError = "Could not find <go>Shield Pivot</go>."; return false; }
 
         if (!shield.transform.localPosition.Equals(Vector3.zero))
         {
-             Criterion.globalLastKnownError = "The 'Shield Pivot' position should be (0, 0, 0) relative to its parent.";
+             Criterion.globalLastKnownError = "The <go>Shield Pivot</go> position should be (0, 0, 0) relative to its parent.";
              return false;
         }
         return true;
@@ -265,20 +265,20 @@ public class Tutorial03Callbacks : ScriptableObject
     public bool E7Hierarchy()
     {
         var player = CommonTutorialCallbacks.FindGameObject("Player");
-        if (player == null) { Criterion.globalLastKnownError = "Player missing."; return false; }
+        if (player == null) { Criterion.globalLastKnownError = "Could not find <go>Player</go>."; return false; }
         var shieldPivot = CommonTutorialCallbacks.FindGameObject("Shield Pivot");
-        if (shieldPivot == null) { Criterion.globalLastKnownError = "Shield Pivot missing."; return false; }
+        if (shieldPivot == null) { Criterion.globalLastKnownError = "Could not find <go>Shield Pivot</go>."; return false; }
         var shield = CommonTutorialCallbacks.FindGameObject("Shield");
-        if (shield == null) { Criterion.globalLastKnownError = "Shield missing."; return false; }
+        if (shield == null) { Criterion.globalLastKnownError = "Could not find <go>Shield</go>."; return false; }
 
         if (shieldPivot.transform.parent != player.transform)
         {
-             Criterion.globalLastKnownError = "'Shield Pivot' should be a child of 'Player'.";
+             Criterion.globalLastKnownError = "<go>Shield Pivot</go> should be a child of <go>Player</go>.";
              return false;
         }
         if (shield.transform.parent != shieldPivot.transform)
         {
-             Criterion.globalLastKnownError = "'Shield' should be a child of 'Shield Pivot'.";
+             Criterion.globalLastKnownError = "<go>Shield</go> should be a child of <go>Shield Pivot</go>.";
              return false;
         }
         return true;
@@ -286,11 +286,11 @@ public class Tutorial03Callbacks : ScriptableObject
     public bool E8PivotRotation000()
     {
         var shield = CommonTutorialCallbacks.FindGameObject("Shield Pivot");
-        if (shield == null) { Criterion.globalLastKnownError = "Shield Pivot missing."; return false; }
+        if (shield == null) { Criterion.globalLastKnownError = "Could not find <go>Shield Pivot</go>."; return false; }
 
         if (shield.transform.localEulerAngles.magnitude > 0.1f) //Floating point safe check vs zero
         {
-             Criterion.globalLastKnownError = "Reset the 'Shield Pivot' rotation to (0, 0, 0).";
+             Criterion.globalLastKnownError = "Reset the <go>Shield Pivot</go> rotation to (0, 0, 0).";
              return false;
         }
         return true;
@@ -298,10 +298,10 @@ public class Tutorial03Callbacks : ScriptableObject
     public bool E8PivotHasRotate()
     {
          var go = CommonTutorialCallbacks.FindGameObject("Shield Pivot");
-         if (go == null) { Criterion.globalLastKnownError = "Shield Pivot missing."; return false; }
+         if (go == null) { Criterion.globalLastKnownError = "Could not find <go>Shield Pivot</go>."; return false; }
          if (go.GetComponent("Rotate") == null)
          {
-              Criterion.globalLastKnownError = "'Shield Pivot' needs the 'Rotate' script.";
+              Criterion.globalLastKnownError = "<go>Shield Pivot</go> needs the 'Rotate' script.";
               return false;
          }
          return true;
@@ -311,15 +311,15 @@ public class Tutorial03Callbacks : ScriptableObject
     public bool ExercisePlayerMovementImproved()
     {
         var go = CommonTutorialCallbacks.FindGameObject("Player");
-        if (go == null) { Criterion.globalLastKnownError = "Player missing."; return false; }
+        if (go == null) { Criterion.globalLastKnownError = "Could not find <go>Player</go>."; return false; }
         if (go.GetComponent("PlayerMovement") != null)
         {
-             Criterion.globalLastKnownError = "Please remove the old 'PlayerMovement' script from 'Player' and add 'PlayerMovementImproved'.";
+             Criterion.globalLastKnownError = "Please remove the old 'PlayerMovement' script from <go>Player</go> and add 'PlayerMovementImproved'.";
              return false;
         }
         if (go.GetComponent("PlayerMovementImproved") == null)
         {
-             Criterion.globalLastKnownError = "'Player' is missing the 'PlayerMovementImproved' script.";
+             Criterion.globalLastKnownError = "<go>Player</go> is missing the 'PlayerMovementImproved' script.";
              return false;
         }
         return true;
@@ -327,10 +327,10 @@ public class Tutorial03Callbacks : ScriptableObject
     public bool ExercisePlayerCollectScore()
     {
         var go = CommonTutorialCallbacks.FindGameObject("Player");
-        if (go == null) { Criterion.globalLastKnownError = "Player missing."; return false; }
+        if (go == null) { Criterion.globalLastKnownError = "Could not find <go>Player</go>."; return false; }
         if (go.GetComponent("PlayerCollectScore") == null)
         {
-             Criterion.globalLastKnownError = "'Player' is missing the 'PlayerCollectScore' script.";
+             Criterion.globalLastKnownError = "<go>Player</go> is missing the 'PlayerCollectScore' script.";
              return false;
         }
         return true;
@@ -338,15 +338,15 @@ public class Tutorial03Callbacks : ScriptableObject
     public bool ExerciseShieldControl()
     {
         var go = CommonTutorialCallbacks.FindGameObject("Shield Pivot");
-        if (go == null) { Criterion.globalLastKnownError = "Shield Pivot missing."; return false; }
+        if (go == null) { Criterion.globalLastKnownError = "Could not find <go>Shield Pivot</go>."; return false; }
         if (go.GetComponent("Rotate") != null)
         {
-             Criterion.globalLastKnownError = "Please remove 'Rotate' script from 'Shield Pivot' and use 'ShieldControl' instead.";
+             Criterion.globalLastKnownError = "Please remove 'Rotate' script from <go>Shield Pivot</go> and use 'ShieldControl' instead.";
              return false;
         }
         if (go.GetComponent("ShieldControl") == null)
         {
-             Criterion.globalLastKnownError = "'Shield Pivot' is missing the 'ShieldControl' script.";
+             Criterion.globalLastKnownError = "<go>Shield Pivot</go> is missing the 'ShieldControl' script.";
              return false;
         }
         return true;

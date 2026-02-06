@@ -27,7 +27,7 @@ public class Tutorial04Callbacks : ScriptableObject
         if (go == null) return false; //Likely previous tutorial dependency, simple check is ok or add explicit error
         if (go.GetComponent("PlayerCollectScore") == null)
         {
-             Criterion.globalLastKnownError = "The 'Player' GameObject does not have the 'PlayerCollectScore' script attached.";
+             Criterion.globalLastKnownError = "The <go>Player</go> GameObject does not have the 'PlayerCollectScore' script attached.";
              return false;
         }
         return true;
@@ -38,12 +38,12 @@ public class Tutorial04Callbacks : ScriptableObject
     {
         if (CommonTutorialCallbacks.FindGameObject("Canvas") == null)
         {
-             Criterion.globalLastKnownError = "Could not find a GameObject named 'Canvas'.";
+             Criterion.globalLastKnownError = "Could not find a GameObject named <go>Canvas</go>.";
              return false;
         }
         if (CommonTutorialCallbacks.GameObjectComponent<Canvas>("Canvas") == null)
         {
-             Criterion.globalLastKnownError = "The 'Canvas' GameObject does not have a 'Canvas' component.";
+             Criterion.globalLastKnownError = "The <go>Canvas</go> GameObject does not have a 'Canvas' component.";
              return false;
         }
         return true;
@@ -65,7 +65,7 @@ public class Tutorial04Callbacks : ScriptableObject
         var scaler = CommonTutorialCallbacks.GameObjectComponent<CanvasScaler>("Canvas");
         if (scaler == null)
         {
-             Criterion.globalLastKnownError = "The 'Canvas' is missing the 'Canvas Scaler' component.";
+             Criterion.globalLastKnownError = "The <go>Canvas</go> is missing the 'Canvas Scaler' component.";
              return false;
         }
         if (scaler.uiScaleMode != CanvasScaler.ScaleMode.ScaleWithScreenSize)
@@ -104,13 +104,13 @@ public class Tutorial04Callbacks : ScriptableObject
         var background = CommonTutorialCallbacks.FindGameObject("Background");
         if (background == null)
         {
-             Criterion.globalLastKnownError = "Could not find a GameObject named 'Background'.";
+             Criterion.globalLastKnownError = "Could not find a GameObject named <go>Background</go>.";
              return false;
         }
         var img = background.GetComponent<Image>();
         if (img == null)
         {
-             Criterion.globalLastKnownError = "The 'Background' GameObject is missing the 'Image' component.";
+             Criterion.globalLastKnownError = "The <go>Background</go> GameObject is missing the 'Image' component.";
              return false;
         }
 
@@ -122,7 +122,7 @@ public class Tutorial04Callbacks : ScriptableObject
         }
         if (sprite.name != "Background")
         {
-             Criterion.globalLastKnownError = $"The assigned Sprite must be 'Background', but it is '{sprite.name}'.";
+             Criterion.globalLastKnownError = $"The assigned Sprite must be <asset>Background</asset>, but it is '{sprite.name}'.";
              return false;
         }
         return true;
@@ -136,7 +136,7 @@ public class Tutorial04Callbacks : ScriptableObject
         
         if (!rT.offsetMin.Equals(Vector2.zero) || !rT.offsetMax.Equals(Vector2.zero))
         {
-             Criterion.globalLastKnownError = "The Background RectTransform must be stretched to fill the Canvas (Left/Top/Right/Bottom all 0).";
+             Criterion.globalLastKnownError = "The <go>Background</go> RectTransform must be stretched to fill the Canvas (Left/Top/Right/Bottom all 0).";
              return false;
         }
         if (!img.preserveAspect)
@@ -160,12 +160,12 @@ public class Tutorial04Callbacks : ScriptableObject
             var img = inv.GetComponent<Image>();
             if (img == null)
             {
-                Criterion.globalLastKnownError = $"GameObject '{inv.name}' is missing the 'Image' component.";
+                Criterion.globalLastKnownError = $"GameObject <go>{inv.name}</go> is missing the 'Image' component.";
                 return false;
             }
             if (img.sprite == null)
             {
-                Criterion.globalLastKnownError = $"GameObject '{inv.name}' has no Sprite assigned.";
+                Criterion.globalLastKnownError = $"GameObject <go>{inv.name}</go> has no Sprite assigned.";
                 return false;
             }
         }
@@ -176,12 +176,12 @@ public class Tutorial04Callbacks : ScriptableObject
         var title = CommonTutorialCallbacks.FindGameObject("Title");
         if (title == null)
         {
-             Criterion.globalLastKnownError = "Could not find a GameObject named 'Title'.";
+             Criterion.globalLastKnownError = "Could not find a GameObject named <go>Title</go>.";
              return false;
         }
         if (title.GetComponent<Text>() == null)
         {
-             Criterion.globalLastKnownError = "The 'Title' GameObject is missing the 'Text' component.";
+             Criterion.globalLastKnownError = "The <go>Title</go> GameObject is missing the 'Text' component.";
              return false;
         }
         return true;
@@ -223,7 +223,7 @@ public class Tutorial04Callbacks : ScriptableObject
         if (title == null) return false;
         if (title.GetComponent<Shadow>() == null)
         {
-             Criterion.globalLastKnownError = "The 'Title' GameObject is missing the 'Shadow' component.";
+             Criterion.globalLastKnownError = "The <go>Title</go> GameObject is missing the 'Shadow' component.";
              return false;
         }
         return true;
@@ -259,13 +259,13 @@ public class Tutorial04Callbacks : ScriptableObject
         var group = CommonTutorialCallbacks.FindGameObject("Button Group");
         if (group == null)
         {
-             Criterion.globalLastKnownError = "Could not find a GameObject named 'Button Group'.";
+             Criterion.globalLastKnownError = "Could not find a GameObject named <go>Button Group</go>.";
              return false;
         }
         var parent = group.transform.parent;
         if (parent == null || parent.name != "Canvas")
         {
-             Criterion.globalLastKnownError = "The 'Button Group' should be a child of the 'Canvas'.";
+             Criterion.globalLastKnownError = "The <go>Button Group</go> should be a child of the <go>Canvas</go>.";
              return false;
         }
         return true;
@@ -273,10 +273,10 @@ public class Tutorial04Callbacks : ScriptableObject
     public bool C1ButtonGroupVerticalLayoutGroup()
     {
         var group = CommonTutorialCallbacks.FindGameObject("Button Group");
-        if (group == null) { Criterion.globalLastKnownError = "Button Group missing."; return false; }
+        if (group == null) { Criterion.globalLastKnownError = "Could not find <go>Button Group</go>."; return false; }
         if (group.GetComponent<VerticalLayoutGroup>() == null)
         {
-             Criterion.globalLastKnownError = "The 'Button Group' needs a 'Vertical Layout Group' component.";
+             Criterion.globalLastKnownError = "The <go>Button Group</go> needs a 'Vertical Layout Group' component.";
              return false;
         }
         return true;
@@ -284,11 +284,11 @@ public class Tutorial04Callbacks : ScriptableObject
     public bool C1ButtonGroupChildren()
     {
         var group = CommonTutorialCallbacks.FindGameObject("Button Group");
-        if (group == null) { Criterion.globalLastKnownError = "Button Group missing."; return false; }
+        if (group == null) { Criterion.globalLastKnownError = "Could not find <go>Button Group</go>."; return false; }
 
         if (group.transform.childCount != 3)
         {
-             Criterion.globalLastKnownError = $"The 'Button Group' should have exactly 3 children. Found {group.transform.childCount}.";
+             Criterion.globalLastKnownError = $"The <go>Button Group</go> should have exactly 3 children. Found {group.transform.childCount}.";
              return false;
         }
         //Names
@@ -297,18 +297,18 @@ public class Tutorial04Callbacks : ScriptableObject
         {
             if (group.transform.GetChild(i).name != names[i])
             {
-                 Criterion.globalLastKnownError = $"Child {i+1} should be named '{names[i]}', but is '{group.transform.GetChild(i).name}'.";
+                 Criterion.globalLastKnownError = $"Child {i+1} should be named <go>{names[i]}</go>, but is <go>{group.transform.GetChild(i).name}</go>.";
                  return false;
             }
             var text = group.transform.GetChild(i).GetComponentInChildren<Text>();
             if (text == null)
             {
-                 Criterion.globalLastKnownError = $"The button '{names[i]}' is missing a Text component in its children.";
+                 Criterion.globalLastKnownError = $"The button <go>{names[i]}</go> is missing a Text component in its children.";
                  return false;
             }
             if (text.text.Trim() != names[i])
             {
-                 Criterion.globalLastKnownError = $"The text on button '{names[i]}' should be '{names[i]}'.";
+                 Criterion.globalLastKnownError = $"The text on button <go>{names[i]}</go> should be '{names[i]}'.";
                  return false;
             }
         }
@@ -322,7 +322,7 @@ public class Tutorial04Callbacks : ScriptableObject
             var image = button.GetComponent<Image>(); //Usually on the button itself
             if (image != null && image.enabled)
             {
-                 Criterion.globalLastKnownError = $"The Image component on button '{button.name}' should be disabled (uncheck the box next to 'Image').";
+                 Criterion.globalLastKnownError = $"The Image component on button <go>{button.name}</go> should be disabled (uncheck the box next to 'Image').";
                  return false;
             }
         }
@@ -336,7 +336,7 @@ public class Tutorial04Callbacks : ScriptableObject
             var text = button.GetComponentInChildren<Text>();
             if (button.targetGraphic != text)
             {
-                 Criterion.globalLastKnownError = $"The 'Target Graphic' for button '{button.name}' should be assigned to its Text component (drag the Text into the field).";
+                 Criterion.globalLastKnownError = $"The 'Target Graphic' for button <go>{button.name}</go> should be assigned to its Text component (drag the Text into the field).";
                  return false;
             }
         }
@@ -349,7 +349,7 @@ public class Tutorial04Callbacks : ScriptableObject
         {
             if (button.colors.highlightedColor != Color.red)
             {
-                 Criterion.globalLastKnownError = $"The 'Highlighted Color' for button '{button.name}' should be Red.";
+                 Criterion.globalLastKnownError = $"The 'Highlighted Color' for button <go>{button.name}</go> should be Red.";
                  return false;
             }
         }
@@ -362,7 +362,7 @@ public class Tutorial04Callbacks : ScriptableObject
         { 
             if (button.colors.selectedColor != Color.red)
             {
-                 Criterion.globalLastKnownError = $"The 'Selected Color' for button '{button.name}' should be Red.";
+                 Criterion.globalLastKnownError = $"The 'Selected Color' for button <go>{button.name}</go> should be Red.";
                  return false;
             }
         }
@@ -386,7 +386,7 @@ public class Tutorial04Callbacks : ScriptableObject
 
         if (!firstSelected.name.StartsWith("Start Game"))
         {
-             Criterion.globalLastKnownError = "The 'First Selected' object should be the 'Start Game' button.";
+             Criterion.globalLastKnownError = "The 'First Selected' object should be the <go>Start Game</go> button.";
              return false;
         }
         return true;
@@ -398,12 +398,12 @@ public class Tutorial04Callbacks : ScriptableObject
         var go = CommonTutorialCallbacks.FindGameObject("Start Game");
         if (go == null) 
         {
-            Criterion.globalLastKnownError = "Start Game button missing.";
+            Criterion.globalLastKnownError = "Could not find <go>Start Game</go> button.";
             return false;
         }
         if (go.GetComponent("SceneSwitcher") == null)
         {
-             Criterion.globalLastKnownError = "The 'Start Game' button needs the 'SceneSwitcher' script attached.";
+             Criterion.globalLastKnownError = "The <go>Start Game</go> button needs the 'SceneSwitcher' script attached.";
              return false;
         }
         return true;
@@ -413,13 +413,13 @@ public class Tutorial04Callbacks : ScriptableObject
         var button = CommonTutorialCallbacks.GameObjectComponent<Button>("Start Game");
         if (button == null) 
         {
-            Criterion.globalLastKnownError = "Start Game button missing.";
+            Criterion.globalLastKnownError = "Could not find <go>Start Game</go> button.";
             return false;
         }
 
         if (button.onClick.GetPersistentEventCount() == 0)
         {
-             Criterion.globalLastKnownError = "The 'Start Game' button has no OnClick events configured.";
+             Criterion.globalLastKnownError = "The <go>Start Game</go> button has no OnClick events configured.";
              return false;
         }
 
@@ -432,7 +432,7 @@ public class Tutorial04Callbacks : ScriptableObject
 
         if (!eventListenerTarget.name.StartsWith("Start Game"))
         {
-             Criterion.globalLastKnownError = "The OnClick event target should be the 'Start Game' button itself (drag the button into the field).";
+             Criterion.globalLastKnownError = "The OnClick event target should be the <go>Start Game</go> button itself (drag the button into the field).";
              return false;
         }
         return true;
@@ -465,12 +465,12 @@ public class Tutorial04Callbacks : ScriptableObject
 
         if (!hasTitle)
         {
-             Criterion.globalLastKnownError = "The 'Title' scene is missing from Build Settings.";
+             Criterion.globalLastKnownError = "The <asset>Title</asset> scene is missing from Build Settings.";
              return false;
         }
         if (!hasGame)
         {
-             Criterion.globalLastKnownError = "The 'Invaderoids' scene is missing from Build Settings.";
+             Criterion.globalLastKnownError = "The <asset>Invaderoids</asset> scene is missing from Build Settings.";
              return false;
         }
 
@@ -480,7 +480,7 @@ public class Tutorial04Callbacks : ScriptableObject
         var first = EditorBuildSettings.scenes.FirstOrDefault(s => !string.IsNullOrEmpty(s.path));
         if (first != null && !first.path.Contains("Title"))
         {
-             Criterion.globalLastKnownError = "The 'Title' scene should be the first scene in Build Settings (index 0).";
+             Criterion.globalLastKnownError = "The <asset>Title</asset> scene should be the first scene in Build Settings (index 0).";
              return false;
         }
 
@@ -509,20 +509,20 @@ public class Tutorial04Callbacks : ScriptableObject
         var button = CommonTutorialCallbacks.GameObjectComponent<Button>(buttonName);
         if (button == null)
         {
-             Criterion.globalLastKnownError = $"Could not find '{buttonName}' button.";
+             Criterion.globalLastKnownError = $"Could not find <go>{buttonName}</go> button.";
              return false;
         }
 
         if (button.onClick.GetPersistentEventCount() == 0)
         {
-             Criterion.globalLastKnownError = $"The '{buttonName}' button has no OnClick events.";
+             Criterion.globalLastKnownError = $"The <go>{buttonName}</go> button has no OnClick events.";
              return false;
         }
 
         var func = button.onClick.GetPersistentMethodName(0);
         if (func != methodName)
         {
-             Criterion.globalLastKnownError = $"The '{buttonName}' button OnClick function should be '{methodName}', but is '{func}'.";
+             Criterion.globalLastKnownError = $"The <go>{buttonName}</go> button OnClick function should be '{methodName}', but is '{func}'.";
              return false;
         }
         return true;
@@ -548,12 +548,12 @@ public class Tutorial04Callbacks : ScriptableObject
         var go = CommonTutorialCallbacks.FindGameObject("Player");
         if (go == null) 
         {
-             Criterion.globalLastKnownError = "Could not find 'Player'.";
+             Criterion.globalLastKnownError = "Could not find <go>Player</go>.";
              return false;
         }
         if (go.GetComponent("EndGameListener") == null)
         {
-             Criterion.globalLastKnownError = "The 'Player' GameObject needs the 'EndGameListener' script.";
+             Criterion.globalLastKnownError = "The <go>Player</go> GameObject needs the 'EndGameListener' script.";
              return false;
         }
         return true;
@@ -563,13 +563,13 @@ public class Tutorial04Callbacks : ScriptableObject
         var prefab = CommonTutorialCallbacks.GetPrefab("Invaderoid");
         if (prefab == null) 
         {
-             Criterion.globalLastKnownError = "Could not find 'Invaderoid' Prefab.";
+             Criterion.globalLastKnownError = "Could not find <asset>Invaderoid</asset> Prefab.";
              return false;
         }
 
         if (!prefab.CompareTag("Enemy"))
         {
-             Criterion.globalLastKnownError = "The 'Invaderoid' Prefab Tag should be set to 'Enemy'.";
+             Criterion.globalLastKnownError = "The <asset>Invaderoid</asset> Prefab Tag should be set to 'Enemy'.";
              return false;
         }
         return true;
