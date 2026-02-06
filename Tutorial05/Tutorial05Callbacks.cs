@@ -305,7 +305,7 @@ public class Tutorial05Callbacks : ScriptableObject
         if (prefab == null) return false;
         if (prefab.GetComponent("ExplosionOnDestroy") != null)
         {
-             Criterion.globalLastKnownError = "Remove the 'ExplosionOnDestroy' script from the <asset>Invaderoid</asset> Prefab.";
+             Criterion.globalLastKnownError = "Remove the <asset>ExplosionOnDestroy</asset> script from the <asset>Invaderoid</asset> Prefab.";
              return false;
         }
         return true;
@@ -317,7 +317,7 @@ public class Tutorial05Callbacks : ScriptableObject
         var send = prefab.GetComponent("SendAnimTriggerOnCollision");
         if (send == null)
         {
-             Criterion.globalLastKnownError = "The <asset>Invaderoid</asset> Prefab is missing the 'SendAnimTriggerOnCollision' script.";
+             Criterion.globalLastKnownError = "The <asset>Invaderoid</asset> Prefab is missing the <asset>SendAnimTriggerOnCollision</asset> script.";
              return false;
         }
         
@@ -344,7 +344,7 @@ public class Tutorial05Callbacks : ScriptableObject
         if (prefab == null) return false;
         if (prefab.GetComponent("DestroySelfAndOtherOnCollision") != null)
         {
-             Criterion.globalLastKnownError = "Remove 'DestroySelfAndOtherOnCollision' script from the <asset>Bullet</asset> Prefab.";
+             Criterion.globalLastKnownError = "Remove <asset>DestroySelfAndOtherOnCollision</asset> script from the <asset>Bullet</asset> Prefab.";
              return false;
         }
         return true;
@@ -355,7 +355,7 @@ public class Tutorial05Callbacks : ScriptableObject
         if (prefab == null) return false;
         if (prefab.GetComponent("DestroyOnCollision") == null)
         {
-             Criterion.globalLastKnownError = "Add 'DestroyOnCollision' script to the <asset>Bullet</asset> Prefab.";
+             Criterion.globalLastKnownError = "Add <asset>DestroyOnCollision</asset> script to the <asset>Bullet</asset> Prefab.";
              return false;
         }
         return true;
@@ -405,7 +405,7 @@ public class Tutorial05Callbacks : ScriptableObject
         if (prefab == null) return false;
         if (prefab.GetComponent("AnimationEventObjectDestroyer") == null)
         {
-             Criterion.globalLastKnownError = "Add the 'AnimationEventObjectDestroyer' script to the <asset>Invaderoid</asset> Prefab.";
+             Criterion.globalLastKnownError = "Add the <asset>AnimationEventObjectDestroyer</asset> script to the <asset>Invaderoid</asset> Prefab.";
              return false;
         }
         return true;

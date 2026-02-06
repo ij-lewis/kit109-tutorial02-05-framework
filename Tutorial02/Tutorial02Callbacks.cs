@@ -28,7 +28,7 @@ public class Tutorial02Callbacks : ScriptableObject
         }
         if (go.GetComponent("PlayerMovement") == null)
         {
-            Criterion.globalLastKnownError = "The <go>Player</go> GameObject does not have the 'PlayerMovement' script attached.";
+            Criterion.globalLastKnownError = "The <go>Player</go> GameObject does not have the <asset>PlayerMovement</asset> script attached.";
             return false;
         }
         return true;
@@ -87,7 +87,7 @@ public class Tutorial02Callbacks : ScriptableObject
         }
         if (go.GetComponent("WrapAround") == null)
         {
-            Criterion.globalLastKnownError = "The <go>Player</go> GameObject does not have the 'WrapAround' script attached.";
+            Criterion.globalLastKnownError = "The <go>Player</go> GameObject does not have the <asset>WrapAround</asset> script attached.";
             return false;
         }
         return true;
@@ -157,7 +157,7 @@ public class Tutorial02Callbacks : ScriptableObject
         }
         if (go.GetComponent("WrapAround") == null) //Handle both direct type and string if type missing
         {
-             Criterion.globalLastKnownError = "The <go>Bullet</go> GameObject does not have the 'WrapAround' script attached.";
+             Criterion.globalLastKnownError = "The <go>Bullet</go> GameObject does not have the <asset>WrapAround</asset> script attached.";
              return false;
         }
         return true;
@@ -275,7 +275,7 @@ public class Tutorial02Callbacks : ScriptableObject
         }
         if (go.GetComponent("PlayerShooting") == null)
         {
-             Criterion.globalLastKnownError = "The <go>Player</go> GameObject does not have the 'PlayerShooting' script attached.";
+             Criterion.globalLastKnownError = "The <go>Player</go> GameObject does not have the <asset>PlayerShooting</asset> script attached.";
              return false;
         }
         return true;
@@ -291,7 +291,7 @@ public class Tutorial02Callbacks : ScriptableObject
         var shootingScript = go.GetComponent("PlayerShooting");
         if (shootingScript == null) 
         {
-             Criterion.globalLastKnownError = "The <go>Player</go> GameObject does not have the 'PlayerShooting' script attached.";
+             Criterion.globalLastKnownError = "The <go>Player</go> GameObject does not have the <asset>PlayerShooting</asset> script attached.";
              return false;
         }
 
@@ -299,12 +299,12 @@ public class Tutorial02Callbacks : ScriptableObject
         var bulletPrefabProp = so.FindProperty("bulletPrefab");
         if (bulletPrefabProp == null)
         {
-             Criterion.globalLastKnownError = "Could not find the 'bulletPrefab' property in 'PlayerShooting' script.";
+             Criterion.globalLastKnownError = "Could not find the 'bulletPrefab' property in <asset>PlayerShooting</asset> script.";
              return false;
         }
         if (bulletPrefabProp.objectReferenceValue == null)
         {
-             Criterion.globalLastKnownError = "The 'Bullet Prefab' field in 'PlayerShooting' is empty. Assign the Bullet Prefab to it.";
+             Criterion.globalLastKnownError = "The 'Bullet Prefab' field in <asset>PlayerShooting</asset> is empty. Assign the Bullet Prefab to it.";
              return false;
         }
         //Checking name might be fragile if they renamed prefab but kept same logic. But ok for tutorial.
@@ -352,7 +352,7 @@ public class Tutorial02Callbacks : ScriptableObject
         }
         if (prefab.GetComponent("DestroyAfterTime") == null)
         {
-             Criterion.globalLastKnownError = "The <asset>Bullet</asset> Prefab does not have the 'DestroyAfterTime' script attached.";
+             Criterion.globalLastKnownError = "The <asset>Bullet</asset> Prefab does not have the <asset>DestroyAfterTime</asset> script attached.";
              return false;
         }
         return true;
@@ -367,7 +367,7 @@ public class Tutorial02Callbacks : ScriptableObject
         }
         if (prefab.GetComponent("DestroySelfAndOtherOnCollision") == null)
         {
-             Criterion.globalLastKnownError = "The <asset>Bullet</asset> Prefab does not have the 'DestroySelfAndOtherOnCollision' script attached.";
+             Criterion.globalLastKnownError = "The <asset>Bullet</asset> Prefab does not have the <asset>DestroySelfAndOtherOnCollision</asset> script attached.";
              return false;
         }
         return true;
@@ -531,7 +531,7 @@ public class Tutorial02Callbacks : ScriptableObject
         }
         if (go.GetComponent(scriptName) == null)
         {
-             Criterion.globalLastKnownError = $"The <go>Invaderoid</go> GameObject does not have the '{scriptName}' script attached.";
+             Criterion.globalLastKnownError = $"The <go>Invaderoid</go> GameObject does not have the <asset>{scriptName}</asset> script attached.";
              return false;
         }
         return true;
@@ -549,7 +549,7 @@ public class Tutorial02Callbacks : ScriptableObject
         var makeCopies = prefab.GetComponent("MakeCopiesWhenKilled");
         if (makeCopies == null)
         {
-             Criterion.globalLastKnownError = "The <asset>Invaderoid</asset> Prefab does not have the 'MakeCopiesWhenKilled' script attached.";
+             Criterion.globalLastKnownError = "The <asset>Invaderoid</asset> Prefab does not have the <asset>MakeCopiesWhenKilled</asset> script attached.";
              return false;
         }
 
@@ -557,12 +557,12 @@ public class Tutorial02Callbacks : ScriptableObject
         var prop = so.FindProperty("invaderoidPrefab");
         if (prop == null)
         {
-             Criterion.globalLastKnownError = "Could not find 'invaderoidPrefab' property in 'MakeCopiesWhenKilled'.";
+             Criterion.globalLastKnownError = "Could not find 'invaderoidPrefab' property in <asset>MakeCopiesWhenKilled</asset>.";
              return false;
         }
         if (prop.objectReferenceValue == null)
         {
-             Criterion.globalLastKnownError = "The 'Invaderoid Prefab' field in 'MakeCopiesWhenKilled' is empty.";
+             Criterion.globalLastKnownError = "The 'Invaderoid Prefab' field in <asset>MakeCopiesWhenKilled</asset> is empty.";
              return false;
         }
         if (prop.objectReferenceValue != prefab)
@@ -599,12 +599,12 @@ public class Tutorial02Callbacks : ScriptableObject
         }
         if (go.GetComponent("PlayerHealth") == null)
         {
-             Criterion.globalLastKnownError = "The <go>Player</go> GameObject does not have the 'PlayerHealth' script attached.";
+             Criterion.globalLastKnownError = "The <go>Player</go> GameObject does not have the <asset>PlayerHealth</asset> script attached.";
              return false;
         }
         if (go.GetComponent("HurtOnCollision") == null)
         {
-             Criterion.globalLastKnownError = "The <go>Player</go> GameObject does not have the 'HurtOnCollision' script attached.";
+             Criterion.globalLastKnownError = "The <go>Player</go> GameObject does not have the <asset>HurtOnCollision</asset> script attached.";
              return false;
         }
         return true;
@@ -628,38 +628,38 @@ public class Tutorial02Callbacks : ScriptableObject
         var health = go.GetComponent("PlayerHealth");
         if (health == null)
         {
-             Criterion.globalLastKnownError = "The <go>Player</go> GameObject does not have the 'PlayerHealth' script attached.";
+             Criterion.globalLastKnownError = "The <go>Player</go> GameObject does not have the <asset>PlayerHealth</asset> script attached.";
              return false;
         }
         var healthSO = new SerializedObject(health);
         var healthProp = healthSO.FindProperty("explosionPrefab");
         if (healthProp == null)
         {
-             Criterion.globalLastKnownError = "Could not find 'explosionPrefab' property on 'PlayerHealth'.";
+             Criterion.globalLastKnownError = "Could not find 'explosionPrefab' property on <asset>PlayerHealth</asset>.";
              return false;
         }
         if (healthProp.objectReferenceValue != explosion) 
         {
-             Criterion.globalLastKnownError = "The 'Explosion Prefab' field on 'PlayerHealth' is not assigned to the <asset>Explosion</asset> prefab.";
+             Criterion.globalLastKnownError = "The 'Explosion Prefab' field on <asset>PlayerHealth</asset> is not assigned to the <asset>Explosion</asset> prefab.";
              return false;
         }
 
         var hurt = go.GetComponent("HurtOnCollision");
         if (hurt == null)
         {
-             Criterion.globalLastKnownError = "The <go>Player</go> GameObject does not have the 'HurtOnCollision' script attached.";
+             Criterion.globalLastKnownError = "The <go>Player</go> GameObject does not have the <asset>HurtOnCollision</asset> script attached.";
              return false;
         }
         var hurtSO = new SerializedObject(hurt);
         var hurtProp = hurtSO.FindProperty("explosionPrefab");
         if (hurtProp == null)
         {
-             Criterion.globalLastKnownError = "Could not find 'explosionPrefab' property on 'HurtOnCollision'.";
+             Criterion.globalLastKnownError = "Could not find 'explosionPrefab' property on <asset>HurtOnCollision</asset>.";
              return false;
         }
         if (hurtProp.objectReferenceValue != explosion)
         {
-             Criterion.globalLastKnownError = "The 'Explosion Prefab' field on 'HurtOnCollision' is not assigned to the <asset>Explosion</asset> prefab.";
+             Criterion.globalLastKnownError = "The 'Explosion Prefab' field on <asset>HurtOnCollision</asset> is not assigned to the <asset>Explosion</asset> prefab.";
              return false;
         }
 
@@ -685,7 +685,7 @@ public class Tutorial02Callbacks : ScriptableObject
         var script = invaderoid.GetComponent("ExplosionOnDestroy");
         if (script == null)
         {
-             Criterion.globalLastKnownError = "The <asset>Invaderoid</asset> Prefab does not have the 'ExplosionOnDestroy' script attached.";
+             Criterion.globalLastKnownError = "The <asset>Invaderoid</asset> Prefab does not have the <asset>ExplosionOnDestroy</asset> script attached.";
              return false;
         }
 
@@ -694,12 +694,12 @@ public class Tutorial02Callbacks : ScriptableObject
         
         if (prop == null)
         {
-             Criterion.globalLastKnownError = "Could not find 'explosionPrefab' property on 'ExplosionOnDestroy'.";
+             Criterion.globalLastKnownError = "Could not find 'explosionPrefab' property on <asset>ExplosionOnDestroy</asset>.";
              return false;
         }
         if (prop.objectReferenceValue != explosion)
         {
-             Criterion.globalLastKnownError = "The 'Explosion Prefab' field on 'ExplosionOnDestroy' is not assigned to the <asset>Explosion</asset> prefab.";
+             Criterion.globalLastKnownError = "The 'Explosion Prefab' field on <asset>ExplosionOnDestroy</asset> is not assigned to the <asset>Explosion</asset> prefab.";
              return false;
         }
         return true;
@@ -714,7 +714,7 @@ public class Tutorial02Callbacks : ScriptableObject
         }
         if (go.GetComponent("PlayerHyperspace") == null)
         {
-             Criterion.globalLastKnownError = "The <go>Player</go> GameObject does not have the 'PlayerHyperspace' script attached.";
+             Criterion.globalLastKnownError = "The <go>Player</go> GameObject does not have the <asset>PlayerHyperspace</asset> script attached.";
              return false;
         }
         return true;

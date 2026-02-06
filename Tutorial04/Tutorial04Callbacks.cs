@@ -27,7 +27,7 @@ public class Tutorial04Callbacks : ScriptableObject
         if (go == null) return false; //Likely previous tutorial dependency, simple check is ok or add explicit error
         if (go.GetComponent("PlayerCollectScore") == null)
         {
-             Criterion.globalLastKnownError = "The <go>Player</go> GameObject does not have the 'PlayerCollectScore' script attached.";
+             Criterion.globalLastKnownError = "The <go>Player</go> GameObject does not have the <asset>PlayerCollectScore</asset> script attached.";
              return false;
         }
         return true;
@@ -403,7 +403,7 @@ public class Tutorial04Callbacks : ScriptableObject
         }
         if (go.GetComponent("SceneSwitcher") == null)
         {
-             Criterion.globalLastKnownError = "The <go>Start Game</go> button needs the 'SceneSwitcher' script attached.";
+             Criterion.globalLastKnownError = "The <go>Start Game</go> button needs the <asset>SceneSwitcher</asset> script attached.";
              return false;
         }
         return true;
@@ -446,7 +446,7 @@ public class Tutorial04Callbacks : ScriptableObject
         var eventListenerFunction = button.onClick.GetPersistentMethodName(0);
         if (eventListenerFunction != "SwitchScene")
         {
-             Criterion.globalLastKnownError = $"The OnClick function is set to '{eventListenerFunction}', but it should be 'SceneSwitcher.SwitchScene'.";
+             Criterion.globalLastKnownError = $"The OnClick function is set to '{eventListenerFunction}', but it should be <asset>SceneSwitcher.SwitchScene</asset>.";
              return false;
         }
         return true;
@@ -553,7 +553,7 @@ public class Tutorial04Callbacks : ScriptableObject
         }
         if (go.GetComponent("EndGameListener") == null)
         {
-             Criterion.globalLastKnownError = "The <go>Player</go> GameObject needs the 'EndGameListener' script.";
+             Criterion.globalLastKnownError = "The <go>Player</go> GameObject needs the <asset>EndGameListener</asset> script.";
              return false;
         }
         return true;

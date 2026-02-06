@@ -29,7 +29,7 @@ public class Tutorial03Callbacks : ScriptableObject
         var movement = go.GetComponent("PlayerMovement");
         if (movement == null)
         {
-             Criterion.globalLastKnownError = "The <go>Player</go> GameObject does not have the 'PlayerMovement' script attached.";
+             Criterion.globalLastKnownError = "The <go>Player</go> GameObject does not have the <asset>PlayerMovement</asset> script attached.";
              return false;
         }
 
@@ -37,7 +37,7 @@ public class Tutorial03Callbacks : ScriptableObject
         var prop = so.FindProperty("rotationSpeed");
         if (prop == null)
         {
-             Criterion.globalLastKnownError = "Could not find 'rotationSpeed' property in 'PlayerMovement' script.";
+             Criterion.globalLastKnownError = "Could not find 'rotationSpeed' property in <asset>PlayerMovement</asset> script.";
              return false;
         }
         if (prop.floatValue != 10f)
@@ -80,7 +80,7 @@ public class Tutorial03Callbacks : ScriptableObject
         }
         if (go.GetComponent("StartAtRandomPosition") == null)
         {
-             Criterion.globalLastKnownError = "The <go>Pickup</go> GameObject does not have the 'StartAtRandomPosition' script attached.";
+             Criterion.globalLastKnownError = "The <go>Pickup</go> GameObject does not have the <asset>StartAtRandomPosition</asset> script attached.";
              return false;
         }
         return true;
@@ -116,7 +116,7 @@ public class Tutorial03Callbacks : ScriptableObject
         }
         if (go.GetComponent("MoveToRandomPositionOnCollision") == null)
         {
-             Criterion.globalLastKnownError = "The <go>Pickup</go> GameObject does not have the 'MoveToRandomPositionOnCollision' script attached.";
+             Criterion.globalLastKnownError = "The <go>Pickup</go> GameObject does not have the <asset>MoveToRandomPositionOnCollision</asset> script attached.";
              return false;
         }
         return true;
@@ -210,7 +210,7 @@ public class Tutorial03Callbacks : ScriptableObject
         if (go == null) { Criterion.globalLastKnownError = "Could not find <go>Shield</go>."; return false; }
         if (go.GetComponent("ShieldDestroyEnemies") == null)
         {
-             Criterion.globalLastKnownError = "The <go>Shield</go> does not have 'ShieldDestroyEnemies' script.";
+             Criterion.globalLastKnownError = "The <go>Shield</go> does not have <asset>ShieldDestroyEnemies</asset> script.";
              return false;
         }
         return true;
@@ -221,7 +221,7 @@ public class Tutorial03Callbacks : ScriptableObject
         if (go == null) { Criterion.globalLastKnownError = "Could not find <go>Shield</go>."; return false; }
         if (go.GetComponent("Rotate") == null)
         {
-             Criterion.globalLastKnownError = "The <go>Shield</go> does not have 'Rotate' script.";
+             Criterion.globalLastKnownError = "The <go>Shield</go> does not have <asset>Rotate</asset> script.";
              return false;
         }
         return true;
@@ -245,7 +245,7 @@ public class Tutorial03Callbacks : ScriptableObject
         if (go == null) { Criterion.globalLastKnownError = "Could not find <go>Shield</go>."; return false; }
         if (go.GetComponent("Rotate") != null)
         {
-             Criterion.globalLastKnownError = "The <go>Shield</go> still has the 'Rotate' script. Please remove it.";
+             Criterion.globalLastKnownError = "The <go>Shield</go> still has the <asset>Rotate</asset> script. Please remove it.";
              return false;
         }
         return true;
@@ -301,7 +301,7 @@ public class Tutorial03Callbacks : ScriptableObject
          if (go == null) { Criterion.globalLastKnownError = "Could not find <go>Shield Pivot</go>."; return false; }
          if (go.GetComponent("Rotate") == null)
          {
-              Criterion.globalLastKnownError = "<go>Shield Pivot</go> needs the 'Rotate' script.";
+              Criterion.globalLastKnownError = "<go>Shield Pivot</go> needs the <asset>Rotate</asset> script.";
               return false;
          }
          return true;
@@ -314,12 +314,12 @@ public class Tutorial03Callbacks : ScriptableObject
         if (go == null) { Criterion.globalLastKnownError = "Could not find <go>Player</go>."; return false; }
         if (go.GetComponent("PlayerMovement") != null)
         {
-             Criterion.globalLastKnownError = "Please remove the old 'PlayerMovement' script from <go>Player</go> and add 'PlayerMovementImproved'.";
+             Criterion.globalLastKnownError = "Please remove the old <asset>PlayerMovement</asset> script from <go>Player</go> and add <asset>PlayerMovementImproved</asset>.";
              return false;
         }
         if (go.GetComponent("PlayerMovementImproved") == null)
         {
-             Criterion.globalLastKnownError = "<go>Player</go> is missing the 'PlayerMovementImproved' script.";
+             Criterion.globalLastKnownError = "<go>Player</go> is missing the <asset>PlayerMovementImproved</asset> script.";
              return false;
         }
         return true;
@@ -330,7 +330,7 @@ public class Tutorial03Callbacks : ScriptableObject
         if (go == null) { Criterion.globalLastKnownError = "Could not find <go>Player</go>."; return false; }
         if (go.GetComponent("PlayerCollectScore") == null)
         {
-             Criterion.globalLastKnownError = "<go>Player</go> is missing the 'PlayerCollectScore' script.";
+             Criterion.globalLastKnownError = "<go>Player</go> is missing the <asset>PlayerCollectScore</asset> script.";
              return false;
         }
         return true;
@@ -341,12 +341,12 @@ public class Tutorial03Callbacks : ScriptableObject
         if (go == null) { Criterion.globalLastKnownError = "Could not find <go>Shield Pivot</go>."; return false; }
         if (go.GetComponent("Rotate") != null)
         {
-             Criterion.globalLastKnownError = "Please remove 'Rotate' script from <go>Shield Pivot</go> and use 'ShieldControl' instead.";
+             Criterion.globalLastKnownError = "Please remove <asset>Rotate</asset> script from <go>Shield Pivot</go> and use <asset>ShieldControl</asset> instead.";
              return false;
         }
         if (go.GetComponent("ShieldControl") == null)
         {
-             Criterion.globalLastKnownError = "<go>Shield Pivot</go> is missing the 'ShieldControl' script.";
+             Criterion.globalLastKnownError = "<go>Shield Pivot</go> is missing the <asset>ShieldControl</asset> script.";
              return false;
         }
         return true;
