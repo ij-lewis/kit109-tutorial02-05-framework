@@ -51,8 +51,8 @@ MonoBehaviour:
           \r\n    - Data Types: <a>https://unity3d.com/learn/tutorials/topics/scripting/data-types</a>
           \r\n    - Classes: <a>https://unity3d.com/learn/tutorials/topics/scripting/classes</a>\r\n\u2022
           Watch the following Unity tutorial videos to reinforce the basic Unity-specific
-          Scripting concepts used in the scripts in this practical:\r\n    - GetButton
-          and GetKey: <a>https://unity3d.com/learn/tutorials/topics/scripting/getbutton-and-getkey</a>\r\n   
+          Scripting concepts used in the scripts in this practical:\r\n    - Keyboard
+          Input: <a>https://docs.unity3d.com/Packages/com.unity.inputsystem@1.0/manual/Keyboard.html</a>\r\n   
           - Update and FixedUpdate: <a>https://unity3d.com/learn/tutorials/topics/scripting/update-and-fixedupdate</a>\r\n   
           - Translate and Rotate: <a>https://unity3d.com/learn/tutorials/topics/scripting/translate-and-rotate</a>\r\n   
           - GetComponent: <a>https://unity3d.com/learn/tutorials/topics/scripting/getcomponent</a>\r\n   

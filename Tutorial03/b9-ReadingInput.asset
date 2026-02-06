@@ -42,11 +42,11 @@ MonoBehaviour:
         m_Untranslated: Lines 17, 24, and 31 - If Statements and Reading Input
       Text:
         m_Untranslated: "<code>\r\n// Spin counter-clockwise if A or left arrow is
-          pressed\r\nif (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow))\r\n\r\n...\r\n\r\n//
-          Spin clockwise if D or right arrow is pressed\r\nif (Input.GetKey(KeyCode.D)
-          || Input.GetKey(KeyCode.RightArrow))\r\n\r\n...\r\n\r\n// When W or the
-          up arrow is pressed, apply thrust to the ship\r\nif (Input.GetKey(KeyCode.W)
-          || Input.GetKey(KeyCode.UpArrow))\r\n</code>\r\nInside the FixedUpdate
+          pressed\r\nif (Keyboard.current.aKey.isPressed || Keyboard.current.leftArrowKey.isPressed)\r\n\r\n...\r\n\r\n//
+          Spin clockwise if D or right arrow is pressed\r\nif (Keyboard.current.dKey.isPressed
+          || Keyboard.current.rightArrowKey.isPressed)\r\n\r\n...\r\n\r\n// When
+          W or the up arrow is pressed, apply thrust to the ship\r\nif (Keyboard.current.wKey.isPressed
+          || Keyboard.current.upArrowKey.isPressed)\r\n</code>\r\nInside the FixedUpdate
           function, there are a number of if-statements to make certain actions occur
           when the associated inputs are given (these if-statements are on <b>lines
           17, 24, and 31</b>). For reference, the syntax of an if-statement in C#
@@ -55,18 +55,18 @@ MonoBehaviour:
           (true or false), which may be the value returned from a function, a variable,
           or by comparing a variable to another value (e.g. <c>i \\< 5</c>). As with
           functions, the code to run if the condition is true is contained between
-          the opening and closing curly braces.\r\nUnity has a class called <doc>Input</doc>
-          that contains a number of functions for reading input. In this method we
+          the opening and closing curly braces.\r\nUnity's new Input System has a class called <doc>Keyboard</doc>
+          that contains a number of properties for reading input. In this method we
           want the player to rotate and thrust when specific keys are held down (i.e.
           for every game update that the key is pressed we want to player to move).
-          The <doc>Input.GetKey</doc> method is perfect for this. The first if-statement
+          The <doc>Keyboard.current.key.isPressed</doc> property is perfect for this. The first if-statement
           checks to see if either the left arrow key or A key is currently being
           pressed and if so rotates the player counter-clockwise (to the left). Similarly,
           the second if-statement checks if the right arrow key or D key is being
           pressed, and rotates the player clockwise.\r\nSee the following for more
-          explanation of if-statements and the GetKey function:\r\n\u2022 If statements:
+          explanation of if-statements and the Keyboard class:\r\n\u2022 If statements:
           <a>https://unity3d.com/learn/tutorials/topics/scripting/if-statements?playlist=17117</a>\r\n\u2022
-          GetButton and GetKey: <a>https://unity3d.com/learn/tutorials/topics/scripting/getbutton-and-getkey?playlist=17117</a>\r\n"
+          Keyboard Input: <a>https://docs.unity3d.com/Packages/com.unity.inputsystem@1.0/manual/Keyboard.html</a>\r\n"
       m_PollItems: []
       m_PollCorrectItemIndexes: 00000000
       m_Tutorial: {fileID: 0}
