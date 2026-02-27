@@ -6,6 +6,8 @@ using System.Collections.Generic;
 using UnityEngine.UI;
 using System.Linq;
 using UnityEditor.Animations;
+using System;
+using System.Reflection;
 
 /// <summary>
 /// Implement your Tutorial callbacks here.
@@ -80,33 +82,46 @@ public class Tutorial05Callbacks : ScriptableObject
     }
     public bool C8Recording()
     {
-        //https://forum.unity.com/threads/knowing-when-animation-window-is-in-record-mode-in-script.547801/
-        System.Reflection.Assembly editorAssembly = typeof(Editor).Assembly;
-
-        System.Type windowType = editorAssembly.GetType
-            ("UnityEditorInternal.AnimationWindowState");
-
-        // Get a reference to the unbound property we want to access.
-        System.Reflection.PropertyInfo isRecordingProp = windowType.GetProperty
-            ("recording", System.Reflection.BindingFlags.Instance |
-            System.Reflection.BindingFlags.Public);
-
-        // Get all instances of objects of type "AnimationWindowState"
-        // (There should be exactly one of these, unless the window is closed)
-        Object[] windowInstances = Resources.FindObjectsOfTypeAll(windowType);
-
-        if (windowInstances.Length == 0)
+        // 1. Get the assembly and type safely
+        Assembly editorAssembly = typeof(Editor).Assembly;
+        Type windowType = editorAssembly.GetType("UnityEditor.AnimationWindow");
+    
+        if (windowType == null)
         {
-             Criterion.globalLastKnownError = "The Animation Window must be open.";
-             return false;
+            Criterion.globalLastKnownError = "Internal Error: Could not find AnimationWindowState type. Use shift-click on Next button to progress.";
+            return false;
         }
 
-        for (int i = 0; i < windowInstances.Length; i++)
-        {
-            bool isRecording = (bool)isRecordingProp.GetValue
-                (windowInstances[i], null);
+        // 2. Find the 'recording' property
+        PropertyInfo isRecordingProp = windowType.GetProperty("recording", 
+            BindingFlags.Instance | BindingFlags.Public | BindingFlags.NonPublic);
 
-            if (isRecording) return true;
+        if (isRecordingProp == null)
+        {
+            Criterion.globalLastKnownError = "Internal Error: Could not find 'recording' property. Use shift-click on Next button to progress.";
+            return false;
+        }
+
+        // 3. Find instances of the internal state object
+        // Note: This finds the state object itself, not the Window object
+        var windowInstances = Resources.FindObjectsOfTypeAll(windowType);
+
+        if (windowInstances == null || windowInstances.Length == 0)
+        {
+            Criterion.globalLastKnownError = "The Animation Window must be open.";
+            return false;
+        }
+
+        // 4. Iterate and check
+        foreach (var instance in windowInstances)
+        {
+            if (instance == null) continue;
+
+            object val = isRecordingProp.GetValue(instance, null);
+            if (val is bool isRecording && isRecording)
+            {
+                return true;
+            }
         }
 
         Criterion.globalLastKnownError = "Enable recording mode (red circle button) in the Animation Window.";
